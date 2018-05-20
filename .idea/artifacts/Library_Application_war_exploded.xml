@@ -18,6 +18,10 @@
           <element id="library" level="project" name="Maven: org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.1" />
           <element id="library" level="project" name="Maven: org.glassfish:javax.json:1.0.4" />
           <element id="library" level="project" name="Mojarra-2.2.1" />
+          <element id="library" level="project" name="Maven: net.bootsfaces:bootsfaces:1.2.0" />
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:5.3" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.11" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:2.6.0" />
         </element>
       </element>
     </root>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" type="application/javascript"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            type="application/javascript"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" type="application/javascript"/>
+
+    <title>Library Application</title>
+</h:head>
+<h:body style="background-color: #f0f0f0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-4-common">
+                <div class="center-block">
+                    <h:graphicImage styleClass="center-block" value="images/logo.jpg"/>
+                </div>
+                <div class="center-block">
+                    <ul class="center-block">
+                        <li>
+                            <a href="authors.xhtml">Search</a>
+                        </li>
+                        <li>
+                            <a class="active" href="authors.xhtml">Add Author</a>
+                        </li>
+                        <li>
+                            <a href="authors.xhtml">Add Publisher</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 ">
+
+                <div class="col-8-common">
+                    <h:form style="padding: 10px">
+                        <p:messages id="messages"/>
+                        <h:panelGrid id="grid" columns="2" cellpadding="5" cellspacing="5">
+                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px" for="authot_name" value="Author Name:*"/>
+                            <p:inputText style="margin-bottom: 10px" maxlength="255" id="authot_name"
+                                         value="#{authorBean.authors.authors_name}"/>
+
+                            <p:outputLabel style="margin-right: 10px" for="authot_desc" value="Description :*"/>
+                            <p:inputTextarea value="#{authorBean.authors.authors_desc}" id="authot_desc" rows="5"
+                                             cols="30" maxlength="2000" autoResize="false"/>
+
+                        </h:panelGrid>
+
+                        <p:commandButton type="button" styleClass="btn btn-success" action="#{authorBean.addAuthor}" style="padding-bottom: 10px" id="submitButton"
+                                         value="Save" update="messages"/>
+                    </h:form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</h:body>
+
+</html>
