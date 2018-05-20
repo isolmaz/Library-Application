@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" type="application/javascript"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            type="application/javascript"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" type="application/javascript"/>
+
+    <title>Library Application</title>
+</h:head>
+<h:body style="background-color: #f0f0f0">
+    <div class="container">
+        <div class="row">
+            <!--LEFT NAVİGATİON MENU-->
+            <div class="col-sm-4 col-4-common">
+                <div class="center-block">
+                    <h:graphicImage styleClass="center-block" value="images/logo.jpg"/>
+                </div>
+                <div class="center-block">
+                    <ul class="center-block">
+                        <li>
+                            <a href="index.xhtml">Search</a>
+                        </li>
+                        <li>
+                            <a href="authors.xhtml">Add Author</a>
+                        </li>
+                        <li>
+                            <a href="publishers.xhtml">Add Publisher</a>
+                        </li>
+                        <li>
+                            <a class="active" href="books.xhtml">Add Book</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--END OF LEFT NAVİGATİON MENU-->
+            <!--RIGHT PANEL-->
+            <div class="col-sm-8 ">
+
+                <div class="col-8-common">
+                    <h:form style="padding: 10px">
+                        <p:messages id="messages"/>
+                        <h:panelGrid id="grid" columns="2" cellpadding="5">
+                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="Name:*"/>
+                            <p:inputText style="margin-bottom: 10px" maxlength="255"
+                                         value="#{booksBean.books.book_name}"/>
+
+                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="Sub Name:*"/>
+                            <p:inputText style="margin-bottom: 10px" maxlength="255"
+                                         value="#{booksBean.books.book_sub_name}"/>
+
+                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="Serial Name:*"/>
+                            <p:inputText style="margin-bottom: 10px" maxlength="255"
+                                         value="#{booksBean.books.book_serial_name}"/>
+
+
+                            <p:outputLabel style="margin-bottom: 10px;" value="Author: "/>
+                            <h:selectOneMenu   value="#{booksBean.author_id}" style="width:150px;margin-bottom: 10px;">
+                                <f:selectItem itemLabel="Select Author" itemValue="-999" noSelectionOption="true"/>
+                                <f:selectItems value="#{booksBean.authors}" var="a" itemLabel="#{a.authors_name}" itemValue="#{a.id}"/>
+                            </h:selectOneMenu>
+
+                            <p:outputLabel  style="margin-bottom: 10px;" value="Publisher: "/>
+                            <h:selectOneMenu  value="#{booksBean.publisher_id}" style="width:150px;margin-bottom: 10px;">
+                                <f:selectItem itemLabel="Select Publisher" itemValue="-999" noSelectionOption="true"/>
+                                <f:selectItems value="#{booksBean.publishers}" var="p" itemLabel="#{p.publisher_name}" itemValue="#{p.id}"/>
+                            </h:selectOneMenu>
+
+                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="ISBN number:*"/>
+                            <p:inputText style="margin-bottom: 10px" maxlength="255"
+                                         value="#{booksBean.books.book_isbn}"/>
+
+
+                            <p:outputLabel style="margin-right: 10px" value="Description :*"/>
+                            <p:inputTextarea value="#{booksBean.books.book_desc}" rows="5"
+                                             cols="30" maxlength="2000" autoResize="false"/>
+
+                        </h:panelGrid>
+
+                        <p:commandButton value="Save" id="ajax" update="messages"
+                                         action="#{booksBean.addBook}" styleClass="button_save"/>
+                    </h:form>
+                </div>
+
+            </div>
+            <!--END OF RIGHT PANEL-->
+        </div>
+    </div>
+
+</h:body>
+
+</html>

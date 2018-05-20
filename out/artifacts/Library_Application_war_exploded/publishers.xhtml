@@ -18,7 +18,7 @@
 <h:body style="background-color: #f0f0f0">
     <div class="container">
         <div class="row">
-            <!--LEFT NAVIGATION MENU-->
+            <!--LEFT NAVİGATİON MENU-->
             <div class="col-sm-4 col-4-common">
                 <div class="center-block">
                     <h:graphicImage styleClass="center-block" value="images/logo.jpg"/>
@@ -29,10 +29,10 @@
                             <a href="index.xhtml">Search</a>
                         </li>
                         <li>
-                            <a class="active" href="authors.xhtml">Add Author</a>
+                            <a  href="authors.xhtml">Add Author</a>
                         </li>
                         <li>
-                            <a href="publishers.xhtml">Add Publisher</a>
+                            <a class="active" href="publishers.xhtml">Add Publisher</a>
                         </li>
                         <li>
                             <a href="books.xhtml">Add Book</a>
@@ -40,7 +40,7 @@
                     </ul>
                 </div>
             </div>
-            <!--END OF LEFT NAVIGATION MENU-->
+            <!--END OF LEFT NAVİGATİON MENU-->
             <!--RIGHT PANEL-->
             <div class="col-sm-8 ">
 
@@ -48,22 +48,22 @@
                     <h:form style="padding: 10px">
                         <p:messages id="messages"/>
                         <h:panelGrid id="grid" columns="2" cellpadding="5" cellspacing="5">
-                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px"  value="Author Name:*"/>
+                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px"  value="Publisher Name:*"/>
                             <p:inputText style="margin-bottom: 10px" maxlength="255"
-                                         value="#{authorsBean.authors.authors_name}"/>
+                                         value="#{publishersBean.publishers.publisher_name}"/>
 
-                            <p:outputLabel style="margin-right: 10px" value="Description :*"/>
-                            <p:inputTextarea value="#{authorsBean.authors.authors_desc}"  rows="5"
+                            <p:outputLabel style="margin-right: 10px"  value="Description :*"/>
+                            <p:inputTextarea value="#{publishersBean.publishers.publisher_desc}"  rows="5"
                                              cols="30" maxlength="2000" autoResize="false"/>
 
                         </h:panelGrid>
 
-                        <p:commandButton value="Save" id="ajax" update="messages" action="#{authorsBean.addAuthor}" styleClass="button_save" />
+                        <p:commandButton value="Save" id="ajax" update="messages" action="#{publishersBean.addPublisher}" styleClass="button_save" />
                     </h:form>
                 </div>
 
             </div>
-            <!--END OFRIGHT PANEL-->
+            <!--END OF RIGHT PANEL-->
         </div>
     </div>
 

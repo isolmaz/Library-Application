@@ -1,7 +1,7 @@
 package com.mhmtnasif.library_app.beans;
 
-import com.mhmtnasif.library_app.dao.AuthorDao;
-import com.mhmtnasif.library_app.dao.daoImpl.AuthorDaoImpl;
+import com.mhmtnasif.library_app.dao.AuthorsDao;
+import com.mhmtnasif.library_app.dao.daoImpl.AuthorsDaoImpl;
 import com.mhmtnasif.library_app.entities.Authors;
 
 import javax.faces.application.FacesMessage;
@@ -11,9 +11,9 @@ import javax.faces.context.FacesContext;
 
 @ManagedBean
 @SessionScoped
-public class AuthorBean {
+public class AuthorsBean {
 
-    AuthorDao authorDao=new AuthorDaoImpl();
+    AuthorsDao authorsDao =new AuthorsDaoImpl();
     private Authors authors = new Authors();
 
     public Authors getAuthors() {
@@ -33,7 +33,9 @@ public class AuthorBean {
                     FacesMessage.SEVERITY_ERROR, "There are empty spaces","There are empty spaces"
             ));
         }else{
-            if (authorDao.addAuthor(this.authors)){
+            if (authorsDao.addAuthor(this.authors)){
+                this.authors.setAuthors_name("");
+                this.authors.setAuthors_desc("");
                 FacesContext.getCurrentInstance().addMessage(null,new FacesMessage(FacesMessage.SEVERITY_INFO,"Successful","Successful"));
             }else{
                 FacesContext.getCurrentInstance().addMessage(null,new FacesMessage(FacesMessage.SEVERITY_ERROR,"Unexpected error occurred!","Unexpected error occurred!"));

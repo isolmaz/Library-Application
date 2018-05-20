@@ -18,6 +18,7 @@
 <h:body style="background-color: #f0f0f0">
     <div class="container">
         <div class="row">
+            <!--LEFT NAVIGATION MENU-->
             <div class="col-sm-4 col-4-common">
                 <div class="center-block">
                     <h:graphicImage styleClass="center-block" value="images/logo.jpg"/>
@@ -25,39 +26,44 @@
                 <div class="center-block">
                     <ul class="center-block">
                         <li>
-                            <a href="authors.xhtml">Search</a>
+                            <a href="index.xhtml">Search</a>
                         </li>
                         <li>
                             <a class="active" href="authors.xhtml">Add Author</a>
                         </li>
                         <li>
-                            <a href="authors.xhtml">Add Publisher</a>
+                            <a href="publishers.xhtml">Add Publisher</a>
+                        </li>
+                        <li>
+                            <a href="books.xhtml">Add Book</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <!--END OF LEFT NAVIGATION MENU-->
+            <!--RIGHT PANEL-->
             <div class="col-sm-8 ">
 
                 <div class="col-8-common">
                     <h:form style="padding: 10px">
                         <p:messages id="messages"/>
                         <h:panelGrid id="grid" columns="2" cellpadding="5" cellspacing="5">
-                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px" for="authot_name" value="Author Name:*"/>
-                            <p:inputText style="margin-bottom: 10px" maxlength="255" id="authot_name"
-                                         value="#{authorBean.authors.authors_name}"/>
+                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px"  value="Author Name:*"/>
+                            <p:inputText style="margin-bottom: 10px" maxlength="255"
+                                         value="#{authorsBean.authors.authors_name}"/>
 
-                            <p:outputLabel style="margin-right: 10px" for="authot_desc" value="Description :*"/>
-                            <p:inputTextarea value="#{authorBean.authors.authors_desc}" id="authot_desc" rows="5"
+                            <p:outputLabel style="margin-right: 10px" value="Description :*"/>
+                            <p:inputTextarea value="#{authorsBean.authors.authors_desc}"  rows="5"
                                              cols="30" maxlength="2000" autoResize="false"/>
 
                         </h:panelGrid>
 
-                        <p:commandButton type="button" styleClass="btn btn-success" action="#{authorBean.addAuthor}" style="padding-bottom: 10px" id="submitButton"
-                                         value="Save" update="messages"/>
+                        <p:commandButton value="Save" id="ajax" update="messages" action="#{authorsBean.addAuthor}" styleClass="button_save" />
                     </h:form>
                 </div>
 
             </div>
+            <!--END OFRIGHT PANEL-->
         </div>
     </div>
 

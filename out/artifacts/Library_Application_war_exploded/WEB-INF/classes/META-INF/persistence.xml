@@ -4,6 +4,8 @@
     <persistence-unit name="LibraryPersistenceUnit">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>com.mhmtnasif.library_app.entities.Authors</class>
+        <class>com.mhmtnasif.library_app.entities.Publishers</class>
+        <class>com.mhmtnasif.library_app.entities.Books</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/library?useSSL=false&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
