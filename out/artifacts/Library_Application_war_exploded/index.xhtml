@@ -3,7 +3,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html
         xmlns:h="http://xmlns.jcp.org/jsf/html"
-        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
 >
 <h:head>
     <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible"/>
@@ -28,7 +28,7 @@
                 <div class="center-block">
                     <ul class="center-block">
                         <li>
-                            <a class="active" href="index.xhtml">Search</a>
+                            <a class="active" href="index.xhtml">Home</a>
                         </li>
                         <li>
                             <a href="authors.xhtml">Add Author</a>
@@ -40,10 +40,13 @@
                             <a href="books.xhtml">Add Book</a>
                         </li>
                         <li>
-                            <a href="authoredit.xhtml">Edit/Delete/Search Author</a>
+                            <a href="authorsedit.xhtml">Edit/Delete/Search Author</a>
                         </li>
                         <li>
-                            <a  href="publisheredit.xhtml">Edit/Delete/Search Publisher</a>
+                            <a  href="publishersedit.xhtml">Edit/Delete/Search Publisher</a>
+                        </li>
+                        <li>
+                            <a  href="booksedit.xhtml">Edit/Delete/Search Books</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +54,163 @@
             <!--END OF LEFT NAVIGATION MENU-->
             <!--RIGHT PANEL-->
             <div class="col-sm-8">
-               
+                <!--BOOK FORM-->
+                <h:form id="booksForm" styleClass="form-inline">
+                    <!--SEARCH LABEL-->
+                    <h:outputLabel style="margin: 10px 20px 10px 0px" value="Search"/>
+                    <!--END OF SEARCH LABEL-->
+                    <!-- SEARCH INPUTTEXT-->
+                    <h:inputText a:placeholder="Try to write something." style="margin: 10px 20px 10px 0px" maxlength="255" styleClass="form-control"
+                                 value="#{indexBean.searchText}" />
+                    <!--END OF SEARCH INPUTTEXT-->
+                    <!-- SEARCH BUTTON-->
+                    <h:commandLink  styleClass="btn btn-info"
+                                   style="margin: 10px 20px 10px 0px " value="Search"
+                                   action="#{indexBean.searchResultList}">
+                        <f:ajax render="@form" event="keyup" listener="#{indexBean.searchResultList}"/>
+                    </h:commandLink>
+                    <!--END OF SEARCH BUTTON-->
+                    <!-- DATATABLE-->
+                    <h:dataTable styleClass="table" id="booksTable" value="#{indexBean.booksList}" var="book"
+                                 rendered="#{not empty indexBean.booksList}">
+                        <!--COLUMN(BOOK NAME)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Book Name"/>
+                            </f:facet>
+                            <h:outputText value="#{book.book_name}"/>
+                        </h:column>
+                        <!--END OF COLUMN(BOOK NAME)-->
+                        <!--COLUMN(BOOK SUB NAME)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Book Sub Name"/>
+                            </f:facet>
+                            <h:outputText value="#{book.book_sub_name}"/>
+                        </h:column>
+                        <!--END OF COLUMN(BOOK SUB NAME)-->
+                        <!--COLUMN(BOOK SERIAL NAME)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Book Serial Name"/>
+                            </f:facet>
+                            <h:outputText value="#{book.book_serial_name}"/>
+                        </h:column>
+                        <!--END OF COLUMN(BOOK SERIAL NAME)-->
+                        <!--COLUMN(BOOK DESCRIPTION)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Book Description"/>
+                            </f:facet>
+                            <h:outputText value="#{book.book_desc}"/>
+                        </h:column>
+                        <!--END OF COLUMN(BOOK DESCRIPTION)-->
+                        <!--COLUMN(BOOK ISBN)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Book ISBN"/>
+                            </f:facet>
+                            <h:outputText value="#{book.book_isbn}"/>
+                        </h:column>
+                        <!--END OF COLUMN(BOOK ISBN)-->
+                        <!--COLUMN(BOOK AUTHOR NAME)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Book Author Name"/>
+                            </f:facet>
+                            <h:outputText value="#{book.book_author.authors_name}"/>
+                        </h:column>
+                        <!--END OF COLUMN(BOOK AUTHOR NAME)-->
+                        <!--COLUMN(BOOK PUBLISHER NAME)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Book Publisher Name"/>
+                            </f:facet>
+                            <h:outputText value="#{book.book_publisher.publisher_name}"/>
+                        </h:column>
+                        <!--END OF COLUMN(BOOK PUBLISHER NAME)-->
+                        <!--COLUMN(EDİT BUTTON)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Show"/>
+                            </f:facet>
+                            <h:commandLink value="Show" styleClass="btn btn-success"
+                                           action="#{indexBean.show(book)}">
+                                <f:ajax render="@form"/>
+                            </h:commandLink>
+                        </h:column>
+                        <!--END OF COLUMN(EDİT BUTTON)-->
+                    </h:dataTable>
+                    <!--END OF DATATABLE-->
+                    <!-- PANEL GROUP(POPUP)-->
+                    <h:panelGroup layout="block" styleClass="popup-panel-overlay" rendered="#{indexBean.popup}">
+                        <div class="popup-panel">
+                            <!-- PANEL GRID-->
+                            <h:panelGrid id="grid" columns="2" cellpadding="5" cellspacing="5">
+                                <h:outputLabel style="margin:10px 20px 10px 0px" value="Name:*"/>
+                                <h:outputLabel value="#{indexBean.booksPopModel.book_name}"/>
+
+                                <h:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="Sub Name:*"/>
+                                <h:outputLabel value="#{indexBean.booksPopModel.book_sub_name}"/>
+
+                                <h:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="Serial Name:*"/>
+                                <h:outputLabel value="#{indexBean.booksPopModel.book_serial_name}"/>
+
+
+                                <h:outputLabel style="margin-bottom: 10px;" value="Author: "/>
+                                <h:outputLabel  value="#{indexBean.booksPopModel.book_author.authors_name}" />
+
+                                <h:outputLabel style="margin-bottom: 10px;" value="Publisher: "/>
+                                <h:outputLabel  value="#{indexBean.booksPopModel.book_publisher.publisher_name}"  />
+
+                                <h:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="ISBN number:*"/>
+                                <h:outputLabel value="#{indexBean.booksPopModel.book_isbn}"/>
+
+                                <h:outputLabel style="margin-right: 10px" value="Description :*"/>
+                                <h:outputLabel  value="#{indexBean.booksPopModel.book_desc}"/>
+                            </h:panelGrid>
+                            <!--END OF PANEL GRID-->
+                            <!-- CANCEL BUTTON-->
+                            <h:commandLink value="Cancel" styleClass="btn btn-success" style="margin: 10px "
+                                           action="#{indexBean.cancel}">
+                                <f:ajax render="@form"/>
+                            </h:commandLink>
+                            <!--END OF CANCEL BUTTON-->
+                        </div>
+                    </h:panelGroup>
+                    <!--END OF PANEL GROUP(POPUP)-->
+                    <!-- FIRST BUTTON-->
+                    <h:commandLink rendered="#{not empty indexBean.booksList}" styleClass="btn btn-info"
+                                   style="margin-right: 10px" value="First" action="#{indexBean.first}">
+                        <f:ajax execute="@form" render=":booksForm"/>
+                    </h:commandLink>
+                    <!--END OF FIRST BUTTON-->
+                    <!--PREV BUTTON-->
+                    <h:commandLink rendered="#{not empty indexBean.booksList}" styleClass="btn btn-info"
+                                   style="margin-right: 10px" value="Prev" action="#{indexBean.prev}">
+                        <f:ajax execute="@form" render=":booksForm"/>
+                    </h:commandLink>
+                    <!--END OF PREV BUTTON-->
+                    <!--NEXT BUTTON-->
+                    <h:commandLink rendered="#{not empty indexBean.booksList}" styleClass="btn btn-info"
+                                   style="margin-right: 10px" value="Next" action="#{indexBean.next}">
+                        <f:ajax execute="@form" render=":booksForm"/>
+                    </h:commandLink>
+                    <!--END OF NEXT BUTTON-->
+                    <!-- LAST BUTTON-->
+                    <h:commandLink rendered="#{not empty indexBean.booksList}" styleClass="btn btn-info"
+                                   style="margin-right: 10px" value="Last" action="#{indexBean.last}">
+                        <f:ajax execute="@form" render=":booksForm"/>
+                    </h:commandLink>
+                    <!--END OF LAST BUTTON-->
+                    <!--CURRENT PAGE / TOTAL PAGE-->
+                    <h:outputLabel rendered="#{not empty indexBean.booksList}" style="margin-right: 10px"
+                                   value="Page #{indexBean.currentPage} / #{indexBean.totalPageSize}"/>
+                    <!--END OF CURRENT PAGE / TOTAL PAGE-->
+                    <!--PANEL GROUNP(MESSAGE TO USER)-->
+                    <h:messages styleClass="list-group-item list-group-item-info" id="messages"/>
+                </h:form>
+                <!--END OF BOOK FORM-->
             </div>
             <!--END OF RIGHT PANEL-->
         </div>

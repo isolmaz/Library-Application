@@ -2,8 +2,8 @@ package com.mhmtnasif.library_app.beans;
 
 import com.mhmtnasif.library_app.dao.AuthorsDao;
 import com.mhmtnasif.library_app.dao.BooksDao;
-import com.mhmtnasif.library_app.dao.daoImpl.AuthorsDaoImpl;
-import com.mhmtnasif.library_app.dao.daoImpl.BooksDaoImpl;
+import com.mhmtnasif.library_app.daoImpl.AuthorsDaoImpl;
+import com.mhmtnasif.library_app.daoImpl.BooksDaoImpl;
 import com.mhmtnasif.library_app.entities.Authors;
 
 import javax.annotation.PostConstruct;
@@ -21,7 +21,6 @@ public class AuthorEditBean {
     private BooksDao booksDao = new BooksDaoImpl();
     private List<Authors> authorList;
     private Authors authorPopModel;
-    private Authors temp;
     private boolean popup;
     private int rowsPerPage;
     private int totalPageSize;
@@ -34,7 +33,7 @@ public class AuthorEditBean {
     public void init() {
         rowsPerPage = 5;
         totalRowSize = authorsDao.findAll(searchText).size();
-        totalPageSize = (int) Math.ceil((double) totalRowSize/ (double) rowsPerPage);
+        totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
         currentPage = 1;
         authorList = authorsDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
 
@@ -43,7 +42,6 @@ public class AuthorEditBean {
 
     public void edit(Authors authors) {
         authorPopModel = authors;
-        temp = authors;
         this.popup = true;
 
     }
@@ -53,15 +51,16 @@ public class AuthorEditBean {
                 authorPopModel.getAuthors_name() == null ||
                 authorPopModel.getAuthors_desc().equals("") ||
                 authorPopModel.getAuthors_desc() == null) {
+            authorList = authorsDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There are empty spaces", "There are empty spaces"));
-            authorList.set(authorList.indexOf(temp), temp);
-            authorPopModel = temp;
         } else {
             if (authorsDao.updateAuthor(authorPopModel)) {
+                authorList.set(authorList.indexOf(authorPopModel), authorPopModel);
+                isListEmpty();
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successful", "Successful"));
             } else {
+                authorList = authorsDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Unexpected error occurred!", "Unexpected error occurred!"));
-                authorList.set(authorList.indexOf(temp), temp);
             }
         }
 
@@ -77,14 +76,7 @@ public class AuthorEditBean {
             if (authorsDao.deleteAuthor(authors)) {
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successful", "Successful"));
                 authorList.remove(authors);
-                if (authorList.isEmpty() && currentPage != 1) {
-                    currentPage--;
-                    totalPageSize--;
-                    authorList = authorsDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
-                } else if (authorList.isEmpty() && currentPage == 1) {
-                    searchText = "";
-                   init();
-                }
+                isListEmpty();
                 totalRowSize--;
                 totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
             } else {
@@ -95,8 +87,18 @@ public class AuthorEditBean {
         }
     }
 
+    public void isListEmpty(){
+        if (authorList.isEmpty() && currentPage != 1) {
+            currentPage--;
+            totalPageSize--;
+            authorList = authorsDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
+        } else if (authorList.isEmpty() && currentPage == 1) {
+            searchText = "";
+            init();
+        }
+    }
     public void next() {
-        if (currentPage != totalPageSize ) {
+        if (currentPage != totalPageSize) {
             currentPage++;
             authorList = authorsDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
         }
@@ -124,11 +126,11 @@ public class AuthorEditBean {
     public void searchResultList() {
         totalRowSize = authorsDao.findAll(searchText).size();
         totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
-        if (totalPageSize!=0){
+        if (totalPageSize != 0) {
             currentPage = 1;
             authorList = authorsDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
-        }else{
-            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There aren't any author like "+searchText+" in the database. ", "There aren't any author like "+searchText+" in the database. "));
+        } else {
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There aren't any author like " + searchText + " in the database. ", "There aren't any author like " + searchText + " in the database. "));
             searchText = "";
             init();
         }

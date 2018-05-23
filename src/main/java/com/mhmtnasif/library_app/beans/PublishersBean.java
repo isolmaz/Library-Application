@@ -1,7 +1,7 @@
 package com.mhmtnasif.library_app.beans;
 
 import com.mhmtnasif.library_app.dao.PublishersDao;
-import com.mhmtnasif.library_app.dao.daoImpl.PublishersDaoImpl;
+import com.mhmtnasif.library_app.daoImpl.PublishersDaoImpl;
 import com.mhmtnasif.library_app.entities.Publishers;
 
 import javax.faces.application.FacesMessage;

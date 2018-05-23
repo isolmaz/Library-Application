@@ -1,4 +1,4 @@
-package com.mhmtnasif.library_app.dao.daoImpl;
+package com.mhmtnasif.library_app.daoImpl;
 
 import com.mhmtnasif.library_app.dao.PublishersDao;
 import com.mhmtnasif.library_app.entities.Publishers;

@@ -4,7 +4,13 @@ import javax.persistence.*;
 
 @NamedQueries({
         @NamedQuery(name = "Books.findByAuthorId",query = "select book from Books book where book.book_author.id=:param"),
-        @NamedQuery(name = "Books.findByPublisherId",query = "select book from Books book where book.book_publisher.id=:param")
+        @NamedQuery(name = "Books.findByPublisherId",query = "select book from Books book where book.book_publisher.id=:param"),
+        @NamedQuery(name = "Books.findAllBySearch",query = "select b from Books b where LOWER(b.book_name) LIKE CONCAT('%',:param,'%') or " +
+                " LOWER(b.book_sub_name) LIKE CONCAT('%',:param,'%') or LOWER(b.book_serial_name) LIKE CONCAT('%',:param,'%')" +
+                " or LOWER(b.book_isbn) LIKE CONCAT('%',:param,'%') or LOWER(b.book_desc) LIKE CONCAT('%',:param,'%')" +
+                " or LOWER(b.book_author.authors_name) LIKE CONCAT('%',:param,'%')" +
+                " or LOWER(b.book_publisher.publisher_name) LIKE CONCAT('%',:param,'%')") ,
+        @NamedQuery(name="Books.findAll",query = "select b from Books b")
 })
 @Entity
 public class Books {

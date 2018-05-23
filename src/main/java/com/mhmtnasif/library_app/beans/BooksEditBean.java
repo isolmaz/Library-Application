@@ -19,8 +19,7 @@ import java.util.List;
 
 @ManagedBean
 @ViewScoped
-public class İndexBean {
-
+public class BooksEditBean {
 
     private BooksDao booksDao = new BooksDaoImpl();
     private AuthorsDao authorsDao = new AuthorsDaoImpl();
@@ -41,31 +40,72 @@ public class İndexBean {
 
     @PostConstruct
     public void init() {
-        if (booksList != null){
-            booksList.clear();
-        }
         authorsList = authorsDao.findAll("");
         publishersList = publishersDao.findAll("");
         rowsPerPage = 5;
+        totalRowSize = booksDao.findAll(searchText).size();
+        totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
         currentPage = 1;
+        booksList = booksDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
 
     }
 
 
-    public void show(Books book) {
+    public void edit(Books book) {
         booksPopModel = book;
         author_id = book.getBook_author().getId();
         publisher_id = book.getBook_publisher().getId();
         this.popup = true;
+
     }
 
+    public void updateBook() {
+        if (booksPopModel.getBook_name().equals("") ||
+                booksPopModel.getBook_name() == null ||
+                booksPopModel.getBook_sub_name().equals("") ||
+                booksPopModel.getBook_sub_name() == null ||
+                booksPopModel.getBook_serial_name().equals("") ||
+                booksPopModel.getBook_serial_name() == null ||
+                author_id == -999 ||
+                publisher_id == -999 ||
+                booksPopModel.getBook_isbn().equals("") ||
+                booksPopModel.getBook_isbn() == null ||
+                booksPopModel.getBook_desc().equals("") ||
+                booksPopModel.getBook_desc() == null) {
+            booksList = booksDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There are empty spaces", "There are empty spaces"));
+        } else {
+            booksPopModel.setBook_author(authorsDao.findById(author_id));
+            booksPopModel.setBook_publisher(publishersDao.findById(publisher_id));
+            if (booksDao.updateBook(booksPopModel)) {
+                booksList.set(booksList.indexOf(booksPopModel), booksPopModel);
+                isListEmpty();
+                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successful", "Successful"));
+            } else {
+                booksList = booksDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
+                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Unexpected error occurred!", "Unexpected error occurred!"));
+            }
+        }
 
-
-    public void cancel() {
         popup = false;
     }
 
+    public void cancelEdit() {
+        popup = false;
+    }
 
+    public void remove(Books book) {
+        if (booksDao.deleteBook(book)) {
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successful", "Successful"));
+            booksList.remove(book);
+            isListEmpty();
+            totalRowSize--;
+            totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
+
+        } else {
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Unexpected error occurred!", "Unexpected error occurred!"));
+        }
+    }
 
     public void next() {
         if (currentPage != totalPageSize) {
@@ -94,17 +134,15 @@ public class İndexBean {
     }
 
     public void searchResultList() {
-        if (searchText.length()>0){
-            totalRowSize = booksDao.findAll(searchText).size();
-            totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
-            if (totalPageSize != 0) {
-                currentPage = 1;
-                booksList = booksDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
-            } else {
-                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There aren't any book like " + searchText + " in the database. ", "There aren't any publisher like " + searchText + " in the database. "));
-                searchText = "";
-                init();
-            }
+        totalRowSize = booksDao.findAll(searchText).size();
+        totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
+        if (totalPageSize != 0) {
+            currentPage = 1;
+            booksList = booksDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
+        } else {
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There aren't any book like " + searchText + " in the database. ", "There aren't any publisher like " + searchText + " in the database. "));
+            searchText = "";
+            init();
         }
     }
 
@@ -118,7 +156,6 @@ public class İndexBean {
             init();
         }
     }
-
 
     public List<Books> getBooksList() {
         return booksList;
@@ -217,3 +254,4 @@ public class İndexBean {
         this.publishersList = publishersList;
     }
 }
+

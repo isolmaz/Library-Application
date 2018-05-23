@@ -2,8 +2,8 @@ package com.mhmtnasif.library_app.beans;
 
 import com.mhmtnasif.library_app.dao.BooksDao;
 import com.mhmtnasif.library_app.dao.PublishersDao;
-import com.mhmtnasif.library_app.dao.daoImpl.BooksDaoImpl;
-import com.mhmtnasif.library_app.dao.daoImpl.PublishersDaoImpl;
+import com.mhmtnasif.library_app.daoImpl.BooksDaoImpl;
+import com.mhmtnasif.library_app.daoImpl.PublishersDaoImpl;
 import com.mhmtnasif.library_app.entities.Publishers;
 
 import javax.annotation.PostConstruct;
@@ -21,7 +21,6 @@ public class PublisherEditBean {
     private BooksDao booksDao = new BooksDaoImpl();
     private List<Publishers> publishersList;
     private Publishers publishersPopModel;
-    private Publishers temp;
     private boolean popup;
     private int rowsPerPage;
     private int totalPageSize;
@@ -43,7 +42,6 @@ public class PublisherEditBean {
 
     public void edit(Publishers publisher) {
         publishersPopModel = publisher;
-        temp = publisher;
         this.popup = true;
 
     }
@@ -53,15 +51,16 @@ public class PublisherEditBean {
                 publishersPopModel.getPublisher_name() == null ||
                 publishersPopModel.getPublisher_desc().equals("") ||
                 publishersPopModel.getPublisher_desc() == null) {
+            publishersList = publishersDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There are empty spaces", "There are empty spaces"));
-            publishersList.set(publishersList.indexOf(temp), temp);
-            publishersPopModel = temp;
         } else {
             if (publishersDao.updatePublisher(publishersPopModel)) {
+                publishersList.set(publishersList.indexOf(publishersPopModel), publishersPopModel);
+                isListEmpty();
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successful", "Successful"));
             } else {
+                publishersList = publishersDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Unexpected error occurred!", "Unexpected error occurred!"));
-                publishersList.set(publishersList.indexOf(temp), temp);
             }
         }
 
@@ -77,14 +76,7 @@ public class PublisherEditBean {
             if (publishersDao.deletePublisher(publisher)) {
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successful", "Successful"));
                 publishersList.remove(publisher);
-                if (publishersList.isEmpty() && currentPage != 1) {
-                    currentPage--;
-                    totalPageSize--;
-                    publishersList = publishersDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
-                } else if (publishersList.isEmpty() && currentPage == 1) {
-                    searchText = "";
-                    init();
-                }
+                isListEmpty();
                 totalRowSize--;
                 totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
             } else {
@@ -92,6 +84,17 @@ public class PublisherEditBean {
             }
         } else {
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Unexpected error occurred!", "Unexpected error occurred!"));
+        }
+    }
+
+    public void isListEmpty() {
+        if (publishersList.isEmpty() && currentPage != 1) {
+            currentPage--;
+            totalPageSize--;
+            publishersList = publishersDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
+        } else if (publishersList.isEmpty() && currentPage == 1) {
+            searchText = "";
+            init();
         }
     }
 
@@ -123,7 +126,7 @@ public class PublisherEditBean {
 
     public void searchResultList() {
         totalRowSize = publishersDao.findAll(searchText).size();
-        totalPageSize = (int) Math.ceil((double)totalRowSize / (double) rowsPerPage);
+        totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
         if (totalPageSize != 0) {
             currentPage = 1;
             publishersList = publishersDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
@@ -152,13 +155,6 @@ public class PublisherEditBean {
         this.publishersPopModel = publishersPopModel;
     }
 
-    public Publishers getTemp() {
-        return temp;
-    }
-
-    public void setTemp(Publishers temp) {
-        this.temp = temp;
-    }
 
     public boolean isPopup() {
         return popup;
