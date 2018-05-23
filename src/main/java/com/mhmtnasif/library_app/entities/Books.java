@@ -2,6 +2,10 @@ package com.mhmtnasif.library_app.entities;
 
 import javax.persistence.*;
 
+@NamedQueries({
+        @NamedQuery(name = "Books.findByAuthorId",query = "select book from Books book where book.book_author.id=:param"),
+        @NamedQuery(name = "Books.findByPublisherId",query = "select book from Books book where book.book_publisher.id=:param")
+})
 @Entity
 public class Books {
 

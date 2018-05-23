@@ -26,14 +26,78 @@ public class PublishersDaoImpl implements PublishersDao {
         }
     }
 
-    public List<Publishers> findAll() {
+    public boolean updatePublisher(Publishers publisher) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
-        TypedQuery<Publishers> publishersTypedQuery = entityManager.createNamedQuery("Publishers.findAll", Publishers.class);
-        List<Publishers> publishers=publishersTypedQuery.getResultList();
+        try {
+            entityManager.getTransaction().begin();
+            entityManager.merge(publisher);
+            entityManager.getTransaction().commit();
+            return true;
+        } catch (Exception e) {
+            return false;
+        } finally {
+            entityManager.close();
+            JpaFactory.getInstance().CloseFactory();
+        }
+    }
+
+    public boolean deletePublisher(Publishers publisher) {
+        EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
+        try {
+            entityManager.getTransaction().begin();
+            if (!entityManager.contains(publisher)) {
+                publisher = entityManager.merge(publisher);
+            }
+            entityManager.remove(publisher);
+            entityManager.getTransaction().commit();
+            return true;
+        } catch (Exception e) {
+            return false;
+        } finally {
+            entityManager.close();
+            JpaFactory.getInstance().CloseFactory();
+        }
+    }
+
+    public List<Publishers> findAll(String searchText) {
+        EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
+        TypedQuery<Publishers> PublishersTypedQuery;
+        List<Publishers> publishers=null;
+        if (searchText != null) {
+            PublishersTypedQuery = entityManager.createNamedQuery("Publishers.findAllBySearch", Publishers.class);
+            PublishersTypedQuery.setParameter("param", searchText.toLowerCase());
+            publishers = PublishersTypedQuery.getResultList();
+        }else{
+            PublishersTypedQuery = entityManager.createNamedQuery("Publishers.findAll", Publishers.class);
+            publishers = PublishersTypedQuery.getResultList();
+        }
         entityManager.close();
         JpaFactory.getInstance().CloseFactory();
         return publishers;
     }
+
+    public List<Publishers> findByRange(int first, int max, String searchText) {
+        EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
+        TypedQuery<Publishers> publishersTypedQuery;
+        List<Publishers> publishers=null;
+        if (searchText!=null) {
+            publishersTypedQuery = entityManager.createNamedQuery("Publishers.findAllBySearch", Publishers.class);
+            publishersTypedQuery.setParameter("param", searchText.toLowerCase());
+            publishersTypedQuery.setFirstResult(first);
+            publishersTypedQuery.setMaxResults(max);
+            publishers = publishersTypedQuery.getResultList();
+        }else{
+            publishersTypedQuery = entityManager.createNamedQuery("Publishers.findAll", Publishers.class);
+            publishersTypedQuery.setFirstResult(first);
+            publishersTypedQuery.setMaxResults(max);
+            publishers = publishersTypedQuery.getResultList();
+        }
+
+        entityManager.close();
+        JpaFactory.getInstance().CloseFactory();
+        return publishers;
+    }
+
 
     public Publishers findById(long id) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();

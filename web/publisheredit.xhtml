@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" type="application/javascript"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            type="application/javascript"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" type="application/javascript"/>
+
+    <title>Library Application</title>
+</h:head>
+<h:body>
+
+    <div class="container">
+        <div class="row">
+            <!--LEFT NAVIGATION MENU-->
+            <div class="col-sm-4 col-4-common">
+                <div class="center-block">
+                    <h:graphicImage styleClass="center-block" value="images/logo.jpg"/>
+                </div>
+                <div class="center-block">
+                    <ul class="center-block">
+                        <li>
+                            <a href="index.xhtml">Search</a>
+                        </li>
+                        <li>
+                            <a href="authors.xhtml">Add Author</a>
+                        </li>
+                        <li>
+                            <a href="publishers.xhtml">Add Publisher</a>
+                        </li>
+                        <li>
+                            <a href="books.xhtml">Add Book</a>
+                        </li>
+                        <li>
+                            <a href="authoredit.xhtml">Edit/Delete/Search Author</a>
+                        </li>
+                        <li>
+                            <a class="active" href="publisheredit.xhtml">Edit/Delete/Search Publisher</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--END OF LEFT NAVIGATION MENU-->
+            <!--RIGHT PANEL-->
+            <div class="col-sm-8">
+                <!--PUBLİSHER FORM-->
+                <h:form id="publisherForm" styleClass="form-inline">
+                    <h:messages styleClass="list-group-item list-group-item-danger" id="messages"/>
+                    <!--SEARCH LABEL-->
+                    <h:outputLabel rendered="#{not empty publisherEditBean.publishersList}"
+                                   style="margin: 10px 20px 10px 0px" value="Search"/>
+                    <!--END OF SEARCH LABEL-->
+                    <!-- SEARCH INPUTTEXT-->
+                    <h:inputText rendered="#{not empty publisherEditBean.publishersList}"
+                                 style="margin: 10px 20px 10px 0px" maxlength="255" styleClass="form-control"
+                                 value="#{publisherEditBean.searchText}" onkeyup="return  this.value.length ==0 ">
+                        <f:ajax render="@form" event="keyup" listener="#{publisherEditBean.searchResultList}"/>
+                    </h:inputText>
+                    <!--END OF SEARCH INPUTTEXT-->
+                    <!-- SEARCH BUTTON-->
+                    <h:commandLink rendered="#{not empty publisherEditBean.publishersList}" styleClass="btn btn-info"
+                                   style="margin: 10px 20px 10px 0px " value="Search"
+                                   action="#{publisherEditBean.searchResultList}">
+                        <f:ajax render="@form" event="keyup" listener="#{publisherEditBean.searchResultList}"/>
+                    </h:commandLink>
+                    <!--END OF SEARCH BUTTON-->
+                    <!-- DATATABLE-->
+                    <h:dataTable styleClass="table" id="publisherTable" value="#{publisherEditBean.publishersList}"
+                                 var="publisher"
+                                 rendered="#{not empty publisherEditBean.publishersList}">
+                        <!--COLUMN(PUBLİSHER NAME)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Publisher Name"/>
+                            </f:facet>
+                            <h:outputText value="#{publisher.publisher_name}"/>
+                        </h:column>
+                        <!--END OF COLUMN(PUBLİSHER NAME)-->
+                        <!--COLUMN(PUBLİSHER DESCRIPTION)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Publisher Description"/>
+                            </f:facet>
+                            <h:outputText value="#{publisher.publisher_desc}"/>
+                        </h:column>
+                        <!--END OF COLUMN(PUBLİSHER DESCRIPTION)-->
+                        <!--COLUMN(EDİT BUTTON)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="edit"/>
+                            </f:facet>
+                            <h:commandLink value="Edit" styleClass="btn btn-success"
+                                           action="#{publisherEditBean.edit(publisher)}">
+                                <f:ajax render="@form"/>
+                            </h:commandLink>
+                        </h:column>
+                        <!--END OF COLUMN(EDİT BUTTON)-->
+                        <!--COLUMN(DELETE BUTTON)-->
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="delete"/>
+                            </f:facet>
+                            <h:commandLink rendered="#{not empty publisherEditBean.publishersList}"
+                                           styleClass="btn btn-danger"
+                                           value="delete" action="#{publisherEditBean.remove(publisher)}">
+                                <f:ajax execute="@form" render=":publisherForm"/>
+                            </h:commandLink>
+                        </h:column>
+                        <!--END OF COLUMN(DELETE BUTTON)-->
+                    </h:dataTable>
+                    <!--END OF DATATABLE-->
+                    <!-- PANEL GROUP(POPUP)-->
+                    <h:panelGroup layout="block" styleClass="popup-panel-overlay" rendered="#{publisherEditBean.popup}">
+                        <div class="popup-panel">
+                            <!-- PANEL GRID-->
+                            <h:panelGrid id="grid" columns="2" cellpadding="5" cellspacing="5">
+
+                                <h:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="Publisher Name:*"/>
+                                <h:inputText style="margin-bottom: 10px" maxlength="255" styleClass="form-control"
+                                             value="#{publisherEditBean.publishersPopModel.publisher_name}"/>
+
+                                <h:outputLabel style="margin-right: 10px" value="Description :*"/>
+                                <h:inputTextarea value="#{publisherEditBean.publishersPopModel.publisher_desc}" rows="5"
+                                                 styleClass="form-control" cols="30" maxlength="2000"
+                                                 autoResize="false"/>
+
+                            </h:panelGrid>
+                            <!--END OF PANEL GRID-->
+                            <!-- SAVE BUTTON-->
+                            <h:commandLink for="messages" styleClass="btn btn-success" style="margin:10px "
+                                           value="Save" action="#{publisherEditBean.updatePublisher}">
+                                <f:ajax execute="@form" render=":publisherForm"/>
+                            </h:commandLink>
+                            <!--END OF SAVE BUTTON-->
+                            <!-- CANCEL BUTTON-->
+                            <h:commandLink value="Cancel" styleClass="btn btn-danger" style="margin: 10px "
+                                           action="#{publisherEditBean.cancelEdit}">
+                                <f:ajax render="@form"/>
+                            </h:commandLink>
+                            <!--END OF CANCEL BUTTON-->
+                        </div>
+                    </h:panelGroup>
+                    <!--END OF PANEL GROUP(POPUP)-->
+                    <!--PANEL GROUNP(MESSAGE TO USER)-->
+                    <h:panelGroup layout="block" rendered="#{empty publisherEditBean.publishersList}">
+                        There aren't any publisher in the database.
+                    </h:panelGroup>
+                    <!--END OF PANEL GROUNP(MESSAGE TO USER)-->
+                    <!-- FIRST BUTTON-->
+                    <h:commandLink rendered="#{not empty publisherEditBean.publishersList}" styleClass="btn btn-info"
+                                   style="margin-right: 10px" value="First" action="#{publisherEditBean.first}">
+                        <f:ajax execute="@form" render=":publisherForm"/>
+                    </h:commandLink>
+                    <!--END OF FIRST BUTTON-->
+                    <!--PREV BUTTON-->
+                    <h:commandLink rendered="#{not empty publisherEditBean.publishersList}" styleClass="btn btn-info"
+                                   style="margin-right: 10px" value="Prev" action="#{publisherEditBean.prev}">
+                        <f:ajax execute="@form" render=":publisherForm"/>
+                    </h:commandLink>
+                    <!--END OF PREV BUTTON-->
+                    <!--NEXT BUTTON-->
+                    <h:commandLink rendered="#{not empty publisherEditBean.publishersList}" styleClass="btn btn-info"
+                                   style="margin-right: 10px" value="Next" action="#{publisherEditBean.next}">
+                        <f:ajax execute="@form" render=":publisherForm"/>
+                    </h:commandLink>
+                    <!--END OF NEXT BUTTON-->
+                    <!-- LAST BUTTON-->
+                    <h:commandLink rendered="#{not empty publisherEditBean.publishersList}" styleClass="btn btn-info"
+                                   style="margin-right: 10px" value="Last" action="#{publisherEditBean.last}">
+                        <f:ajax execute="@form" render=":publisherForm"/>
+                    </h:commandLink>
+                    <!--END OF LAST BUTTON-->
+                    <!--CURRENT PAGE / TOTAL PAGE-->
+                    <h:outputLabel rendered="#{not empty publisherEditBean.publishersList}" style="margin-right: 10px"
+                                   value="Page #{publisherEditBean.currentPage} / #{publisherEditBean.totalPageSize}"/>
+                    <!--END OF CURRENT PAGE / TOTAL PAGE-->
+                </h:form>
+                <!--END OF PUBLİSHER FORM-->
+            </div>
+            <!--END OF RIGHT PANEL-->
+        </div>
+    </div>
+</h:body>
+
+</html>

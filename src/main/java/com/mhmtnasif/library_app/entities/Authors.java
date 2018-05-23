@@ -5,8 +5,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 @NamedQueries({
-        @NamedQuery(name = "Authors.findAll",query = "select a from Authors a")
+        @NamedQuery(name = "Authors.findAllBySearch",query = "select a from Authors a where LOWER(a.authors_name) LIKE CONCAT('%',:param,'%') or LOWER(a.authors_desc) LIKE CONCAT('%',:param,'%') "),
+        @NamedQuery(name="Authors.findAll",query = "select a from Authors a")
 })
+
 @Entity
 public class Authors {
 

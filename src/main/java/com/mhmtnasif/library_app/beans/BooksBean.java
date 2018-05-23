@@ -33,8 +33,8 @@ public class BooksBean {
 
     @PostConstruct
     public void init() {
-        authors = authorsDao.findAll();
-        publishers = publishersDao.findAll();
+        authors = authorsDao.findAll("");
+        publishers = publishersDao.findAll("");
     }
 
     public void addBook() {

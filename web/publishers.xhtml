@@ -2,8 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html
-        xmlns:h="http://xmlns.jcp.org/jsf/html"
-        xmlns:p="http://primefaces.org/ui">
+        xmlns:h="http://xmlns.jcp.org/jsf/html">
 <h:head>
     <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
@@ -37,29 +36,39 @@
                         <li>
                             <a href="books.xhtml">Add Book</a>
                         </li>
+                        <li>
+                            <a  href="authoredit.xhtml">Edit/Delete/Search Author</a>
+                        </li>
+                        <li>
+                            <a  href="publisheredit.xhtml">Edit/Delete/Search Publisher</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <!--END OF LEFT NAVİGATİON MENU-->
             <!--RIGHT PANEL-->
             <div class="col-sm-8 ">
-
                 <div class="col-8-common">
+                    <!--FORM-->
                     <h:form style="padding: 10px">
-                        <p:messages id="messages"/>
+                        <h:messages  styleClass="list-group-item list-group-item-danger" id="messages"/>
+                        <!--PANEL GRID-->
                         <h:panelGrid id="grid" columns="2" cellpadding="5" cellspacing="5">
-                            <p:outputLabel style="margin-bottom: 10px;margin-right: 20px"  value="Publisher Name:*"/>
-                            <p:inputText style="margin-bottom: 10px" maxlength="255"
+                            <h:outputLabel style="margin:10px 20px 10px 0px;"  value="Publisher Name:*"/>
+                            <h:inputText styleClass="form-control" style="margin:10px 20px 10px 0px;" maxlength="255"
                                          value="#{publishersBean.publishers.publisher_name}"/>
 
-                            <p:outputLabel style="margin-right: 10px"  value="Description :*"/>
-                            <p:inputTextarea value="#{publishersBean.publishers.publisher_desc}"  rows="5"
+                            <h:outputLabel style="margin-right: 10px"  value="Description :*"/>
+                            <h:inputTextarea styleClass="form-control" value="#{publishersBean.publishers.publisher_desc}"  rows="5"
                                              cols="30" maxlength="2000" autoResize="false"/>
 
                         </h:panelGrid>
-
-                        <p:commandButton value="Save" id="ajax" update="messages" action="#{publishersBean.addPublisher}" styleClass="button_save" />
+                        <!--END OF PANEL GRID-->
+                        <!-- SAVE BUTTON-->
+                        <h:commandLink  value="Save" id="ajax" update="messages" action="#{publishersBean.addPublisher}" styleClass="btn btn-success" />
+                        <!--END OF SAVE BUTTON-->
                     </h:form>
+                    <!--END OF FORM-->
                 </div>
 
             </div>

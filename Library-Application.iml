@@ -46,7 +46,6 @@
     <orderEntry type="library" name="Maven: org.glassfish:javax.json:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.persistence:org.eclipse.persistence.core:2.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.primefaces:primefaces:5.3" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.11" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.protobuf:protobuf-java:2.6.0" level="project" />
   </component>
