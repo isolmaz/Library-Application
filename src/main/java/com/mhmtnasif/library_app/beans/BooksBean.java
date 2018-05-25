@@ -9,6 +9,7 @@ import com.mhmtnasif.library_app.daoImpl.PublishersDaoImpl;
 import com.mhmtnasif.library_app.entities.Authors;
 import com.mhmtnasif.library_app.entities.Books;
 import com.mhmtnasif.library_app.entities.Publishers;
+import com.mhmtnasif.library_app.entities.Users;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -29,9 +30,11 @@ public class BooksBean {
     private PublishersDao publishersDao = new PublishersDaoImpl();
     private List<Authors> authors;
     private List<Publishers> publishers;
+    private Users user;
 
     @PostConstruct
     public void init() {
+        user=(Users)FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("valid_user");
         authors = authorsDao.findAll("");
         publishers = publishersDao.findAll("");
     }
@@ -55,6 +58,7 @@ public class BooksBean {
         } else {
             this.books.setBook_author(authorsDao.findById(author_id));
             this.books.setBook_publisher(publishersDao.findById(publisher_id));
+            this.books.setBook_user(user);
             if (booksDao.addBook(this.books)) {
                 this.books.setBook_name("");
                 this.books.setBook_sub_name("");
@@ -108,5 +112,13 @@ public class BooksBean {
 
     public void setPublishers(List<Publishers> publishers) {
         this.publishers = publishers;
+    }
+
+    public Users getUser() {
+        return user;
+    }
+
+    public void setUser(Users user) {
+        this.user = user;
     }
 }

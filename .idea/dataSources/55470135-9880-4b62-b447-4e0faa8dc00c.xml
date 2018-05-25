@@ -1113,93 +1113,129 @@
     <table id="280" parent="4" name="publishers">
       <Engine>InnoDB</Engine>
     </table>
-    <column id="281" parent="278" name="İD">
+    <table id="281" parent="4" name="users">
+      <Engine>InnoDB</Engine>
+    </table>
+    <column id="282" parent="278" name="İD">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="278" name="AUTHORS_DESC">
+    <column id="283" parent="278" name="AUTHORS_DESC">
       <Position>2</Position>
       <DataType>varchar(2000)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="278" name="AUTHORS_NAME">
+    <column id="284" parent="278" name="AUTHORS_NAME">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="284" parent="278" name="PRIMARY">
+    <key id="285" parent="278" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>İD</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="285" parent="279" name="İD">
+    <column id="286" parent="279" name="İD">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="279" name="BOOK_DESC">
+    <column id="287" parent="279" name="BOOK_DESC">
       <Position>2</Position>
       <DataType>varchar(2000)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="279" name="BOOK_İSBN">
+    <column id="288" parent="279" name="BOOK_İSBN">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="279" name="BOOK_NAME">
+    <column id="289" parent="279" name="BOOK_NAME">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="279" name="BOOK_SERİAL_NAME">
+    <column id="290" parent="279" name="BOOK_SERİAL_NAME">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="279" name="BOOK_SUB_NAME">
+    <column id="291" parent="279" name="BOOK_SUB_NAME">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="279" name="BOOK_AUTHOR_İD">
+    <column id="292" parent="279" name="BOOK_AUTHOR_İD">
       <Position>7</Position>
       <DataType>bigint(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="279" name="BOOK_PUBLİSHER_İD">
+    <column id="293" parent="279" name="BOOK_PUBLİSHER_İD">
       <Position>8</Position>
       <DataType>bigint(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="293" parent="279" name="PRIMARY">
+    <column id="294" parent="279" name="BOOK_USER_İD">
+      <Position>9</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="295" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>İD</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="294" parent="280" name="İD">
+    <column id="296" parent="280" name="İD">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="280" name="PUBLİSHER_DESC">
+    <column id="297" parent="280" name="PUBLİSHER_DESC">
       <Position>2</Position>
       <DataType>varchar(2000)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="280" name="PUBLİSHER_NAME">
+    <column id="298" parent="280" name="PUBLİSHER_NAME">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="297" parent="280" name="PRIMARY">
+    <key id="299" parent="280" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>İD</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="300" parent="281" name="İD">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="281" name="İSADMİN">
+      <Position>2</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="281" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="281" name="USERNAME">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="304" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>İD</ColNames>
       <Primary>1</Primary>

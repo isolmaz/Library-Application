@@ -1,14 +1,8 @@
 package com.mhmtnasif.library_app.beans;
 
-import com.mhmtnasif.library_app.dao.AuthorsDao;
 import com.mhmtnasif.library_app.dao.BooksDao;
-import com.mhmtnasif.library_app.dao.PublishersDao;
-import com.mhmtnasif.library_app.daoImpl.AuthorsDaoImpl;
 import com.mhmtnasif.library_app.daoImpl.BooksDaoImpl;
-import com.mhmtnasif.library_app.daoImpl.PublishersDaoImpl;
-import com.mhmtnasif.library_app.entities.Authors;
 import com.mhmtnasif.library_app.entities.Books;
-import com.mhmtnasif.library_app.entities.Publishers;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -23,11 +17,7 @@ public class İndexBean {
 
 
     private BooksDao booksDao = new BooksDaoImpl();
-    private AuthorsDao authorsDao = new AuthorsDaoImpl();
-    private PublishersDao publishersDao = new PublishersDaoImpl();
     private List<Books> booksList;
-    private List<Authors> authorsList;
-    private List<Publishers> publishersList;
     private Books booksPopModel;
     private boolean popup;
     private int rowsPerPage;
@@ -44,8 +34,6 @@ public class İndexBean {
         if (booksList != null){
             booksList.clear();
         }
-        authorsList = authorsDao.findAll("");
-        publishersList = publishersDao.findAll("");
         rowsPerPage = 5;
         currentPage = 1;
 
@@ -108,18 +96,6 @@ public class İndexBean {
         }
     }
 
-    public void isListEmpty(){
-        if (booksList.isEmpty() && currentPage != 1) {
-            currentPage--;
-            totalPageSize--;
-            booksList = booksDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
-        } else if (booksList.isEmpty() && currentPage == 1) {
-            searchText = "";
-            init();
-        }
-    }
-
-
     public List<Books> getBooksList() {
         return booksList;
     }
@@ -135,7 +111,6 @@ public class İndexBean {
     public void setBooksPopModel(Books booksPopModel) {
         this.booksPopModel = booksPopModel;
     }
-
 
     public boolean isPopup() {
         return popup;
@@ -199,21 +174,5 @@ public class İndexBean {
 
     public void setPublisher_id(long publisher_id) {
         this.publisher_id = publisher_id;
-    }
-
-    public List<Authors> getAuthorsList() {
-        return authorsList;
-    }
-
-    public void setAuthorsList(List<Authors> authorsList) {
-        this.authorsList = authorsList;
-    }
-
-    public List<Publishers> getPublishersList() {
-        return publishersList;
-    }
-
-    public void setPublishersList(List<Publishers> publishersList) {
-        this.publishersList = publishersList;
     }
 }

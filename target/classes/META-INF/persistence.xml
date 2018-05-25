@@ -6,6 +6,7 @@
         <class>com.mhmtnasif.library_app.entities.Authors</class>
         <class>com.mhmtnasif.library_app.entities.Publishers</class>
         <class>com.mhmtnasif.library_app.entities.Books</class>
+        <class>com.mhmtnasif.library_app.entities.Users</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/library?useSSL=false&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

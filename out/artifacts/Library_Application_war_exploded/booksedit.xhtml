@@ -48,6 +48,9 @@
                         <li>
                             <a class="active" href="booksedit.xhtml">Edit/Delete/Search Books</a>
                         </li>
+                        <li>
+                            <a  href="logout.xhtml">logout</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -56,7 +59,7 @@
             <div class="col-sm-8">
                 <!--BOOK FORM-->
                 <h:form id="booksForm" styleClass="form-inline">
-                    <h:messages styleClass="list-group-item list-group-item-danger" id="messages"/>
+                    <h:messages styleClass="list-group-item list-group-item-info" id="messages"/>
                     <!--SEARCH LABEL-->
                     <h:outputLabel rendered="#{not empty booksEditBean.booksList}"
                                    style="margin: 10px 20px 10px 0px" value="Search"/>

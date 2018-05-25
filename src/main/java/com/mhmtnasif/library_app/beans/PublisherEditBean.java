@@ -72,7 +72,7 @@ public class PublisherEditBean {
     }
 
     public void remove(Publishers publisher) {
-        if (booksDao.deleteBooks(booksDao.findPublisherId(publisher))) {
+        if (booksDao.deleteBooks(booksDao.findByPublisherId(publisher))) {
             if (publishersDao.deletePublisher(publisher)) {
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successful", "Successful"));
                 publishersList.remove(publisher);

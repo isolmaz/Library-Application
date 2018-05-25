@@ -3,14 +3,20 @@ package com.mhmtnasif.library_app.entities;
 import javax.persistence.*;
 
 @NamedQueries({
-        @NamedQuery(name = "Books.findByAuthorId",query = "select book from Books book where book.book_author.id=:param"),
-        @NamedQuery(name = "Books.findByPublisherId",query = "select book from Books book where book.book_publisher.id=:param"),
-        @NamedQuery(name = "Books.findAllBySearch",query = "select b from Books b where LOWER(b.book_name) LIKE CONCAT('%',:param,'%') or " +
+        @NamedQuery(name = "Books.findByAuthorId", query = "select book from Books book where book.book_author.id=:param"),
+        @NamedQuery(name = "Books.findByPublisherId", query = "select book from Books book where book.book_publisher.id=:param"),
+        @NamedQuery(name = "Books.findAllBySearch", query = "select b from Books b where LOWER(b.book_name) LIKE CONCAT('%',:param,'%') or " +
                 " LOWER(b.book_sub_name) LIKE CONCAT('%',:param,'%') or LOWER(b.book_serial_name) LIKE CONCAT('%',:param,'%')" +
                 " or LOWER(b.book_isbn) LIKE CONCAT('%',:param,'%') or LOWER(b.book_desc) LIKE CONCAT('%',:param,'%')" +
                 " or LOWER(b.book_author.authors_name) LIKE CONCAT('%',:param,'%')" +
-                " or LOWER(b.book_publisher.publisher_name) LIKE CONCAT('%',:param,'%')") ,
-        @NamedQuery(name="Books.findAll",query = "select b from Books b")
+                " or LOWER(b.book_publisher.publisher_name) LIKE CONCAT('%',:param,'%')"),
+        @NamedQuery(name = "Books.findAll", query = "select b from Books b"),
+        @NamedQuery(name = "Books.findAllByUserId", query = "select b from Books b where b.book_user.id=:param"),
+        @NamedQuery(name = "Books.findAllByUserIdSearch", query = "select b from Books b where b.book_user.id=:user and (LOWER(b.book_name) LIKE CONCAT('%',:param,'%') or " +
+                " LOWER(b.book_sub_name) LIKE CONCAT('%',:param,'%') or LOWER(b.book_serial_name) LIKE CONCAT('%',:param,'%')" +
+                " or LOWER(b.book_isbn) LIKE CONCAT('%',:param,'%') or LOWER(b.book_desc) LIKE CONCAT('%',:param,'%')" +
+                " or LOWER(b.book_author.authors_name) LIKE CONCAT('%',:param,'%')" +
+                " or LOWER(b.book_publisher.publisher_name) LIKE CONCAT('%',:param,'%'))"),
 })
 @Entity
 public class Books {
@@ -25,9 +31,20 @@ public class Books {
     private Authors book_author;
     @ManyToOne
     private Publishers book_publisher;
+    @ManyToOne
+    private Users book_user;
+
     private String book_isbn;
     @Column(length = 2000)
     private String book_desc;
+
+    public Users getBook_user() {
+        return book_user;
+    }
+
+    public void setBook_user(Users book_user) {
+        this.book_user = book_user;
+    }
 
     public long getId() {
         return id;

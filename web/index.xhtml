@@ -48,6 +48,9 @@
                         <li>
                             <a  href="booksedit.xhtml">Edit/Delete/Search Books</a>
                         </li>
+                        <li>
+                            <a  href="logout.xhtml">logout</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -129,7 +132,7 @@
                             <h:outputText value="#{book.book_publisher.publisher_name}"/>
                         </h:column>
                         <!--END OF COLUMN(BOOK PUBLISHER NAME)-->
-                        <!--COLUMN(EDİT BUTTON)-->
+                        <!--COLUMN(SHOW BUTTON)-->
                         <h:column>
                             <f:facet name="header">
                                 <h:outputText value="Show"/>
@@ -139,7 +142,7 @@
                                 <f:ajax render="@form"/>
                             </h:commandLink>
                         </h:column>
-                        <!--END OF COLUMN(EDİT BUTTON)-->
+                        <!--END OF COLUMN(SHOW BUTTON)-->
                     </h:dataTable>
                     <!--END OF DATATABLE-->
                     <!-- PANEL GROUP(POPUP)-->

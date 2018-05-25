@@ -4,6 +4,7 @@ import com.mhmtnasif.library_app.dao.BooksDao;
 import com.mhmtnasif.library_app.entities.Authors;
 import com.mhmtnasif.library_app.entities.Books;
 import com.mhmtnasif.library_app.entities.Publishers;
+import com.mhmtnasif.library_app.entities.Users;
 import com.mhmtnasif.library_app.util.JpaFactory;
 
 import javax.persistence.EntityManager;
@@ -109,7 +110,7 @@ public class BooksDaoImpl implements BooksDao {
         return booksList;
     }
 
-    public List<Books> findPublisherId(Publishers publisher) {
+    public List<Books> findByPublisherId(Publishers publisher) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Books> booksTypedQuery = entityManager.createNamedQuery("Books.findByPublisherId", Books.class);
         booksTypedQuery.setParameter("param", publisher.getId());
@@ -117,6 +118,49 @@ public class BooksDaoImpl implements BooksDao {
         entityManager.close();
         JpaFactory.getInstance().CloseFactory();
         return booksList;
+    }
+
+    public List<Books> findAllByUserId(String searchText,Users user) {
+        EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
+        TypedQuery<Books> booksTypedQuery;
+        List<Books> books=null;
+        if (searchText != null) {
+            booksTypedQuery = entityManager.createNamedQuery("Books.findAllByUserIdSearch", Books.class);
+            booksTypedQuery.setParameter("param", searchText.toLowerCase());
+            booksTypedQuery.setParameter("user", user.getId());
+            books = booksTypedQuery.getResultList();
+        }else{
+            booksTypedQuery = entityManager.createNamedQuery("Books.findAllByUserId", Books.class);
+            booksTypedQuery.setParameter("param",user.getId());
+            books = booksTypedQuery.getResultList();
+        }
+        entityManager.close();
+        JpaFactory.getInstance().CloseFactory();
+        return books;
+    }
+
+    public List<Books> findByRangeForSpecificUser(int first, int max, String searchText, Users user) {
+        EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
+        TypedQuery<Books> booksTypedQuery;
+        List<Books> books=null;
+        if (searchText!=null) {
+            booksTypedQuery = entityManager.createNamedQuery("Books.findAllByUserIdSearch", Books.class);
+            booksTypedQuery.setParameter("param", searchText.toLowerCase());
+            booksTypedQuery.setParameter("user", user.getId());
+            booksTypedQuery.setFirstResult(first);
+            booksTypedQuery.setMaxResults(max);
+            books = booksTypedQuery.getResultList();
+        }else{
+            booksTypedQuery = entityManager.createNamedQuery("Books.findAllByUserId", Books.class);
+            booksTypedQuery.setParameter("param", user.getId());
+            booksTypedQuery.setFirstResult(first);
+            booksTypedQuery.setMaxResults(max);
+            books = booksTypedQuery.getResultList();
+        }
+
+        entityManager.close();
+        JpaFactory.getInstance().CloseFactory();
+        return books;
     }
 
     public boolean deleteBooks(List<Books> booksList) {
@@ -140,5 +184,6 @@ public class BooksDaoImpl implements BooksDao {
             JpaFactory.getInstance().CloseFactory();
         }
     }
+
 }
 
