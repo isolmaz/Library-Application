@@ -1,14 +1,21 @@
 package com.mhmtnasif.library_app.beans;
 
 import com.mhmtnasif.library_app.dao.BooksDao;
+import com.mhmtnasif.library_app.dao.UsersDao;
 import com.mhmtnasif.library_app.daoImpl.BooksDaoImpl;
+import com.mhmtnasif.library_app.daoImpl.UserDaoImpl;
 import com.mhmtnasif.library_app.entities.Books;
+import com.mhmtnasif.library_app.entities.Users;
+import com.mhmtnasif.library_app.util.LinkedInProfile;
+import com.mhmtnasif.library_app.util.LinkedinPostGet;
+import com.mhmtnasif.library_app.util.Util;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @ManagedBean
@@ -17,6 +24,9 @@ public class İndexBean {
 
 
     private BooksDao booksDao = new BooksDaoImpl();
+    UsersDao usersDao=new UserDaoImpl();
+    LinkedinPostGet linkedinPost_get =new LinkedinPostGet();
+    LinkedInProfile linkedInProfile=new LinkedInProfile();
     private List<Books> booksList;
     private Books booksPopModel;
     private boolean popup;
@@ -31,12 +41,31 @@ public class İndexBean {
 
     @PostConstruct
     public void init() {
-        if (booksList != null){
+        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        String code = request.getParameter("code");
+        String state = request.getParameter("state");
+        if (booksList != null) {
             booksList.clear();
         }
         rowsPerPage = 5;
         currentPage = 1;
-
+        if (code != null && state != null){
+            try {
+                linkedInProfile=linkedinPost_get.sendPost(code);
+                String passwordHash=Util.hashMD5(linkedInProfile.getId());
+                if (usersDao.login(linkedInProfile.getId(),passwordHash)==0){
+                    Users user=usersDao.addUser(new Users(linkedInProfile.getId(),passwordHash,false));
+                    FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("valid_user",user);
+                    //FacesContext.getCurrentInstance().getExternalContext().redirect("user.xhtml");
+                }else{
+                    Users users=usersDao.findUserByUserName(linkedInProfile.getId());
+                    FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("valid_user",users);
+                    //FacesContext.getCurrentInstance().getExternalContext().redirect("user.xhtml");
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 
@@ -48,11 +77,9 @@ public class İndexBean {
     }
 
 
-
     public void cancel() {
         popup = false;
     }
-
 
 
     public void next() {
@@ -82,7 +109,7 @@ public class İndexBean {
     }
 
     public void searchResultList() {
-        if (searchText.length()>0){
+        if (searchText.length() > 0) {
             totalRowSize = booksDao.findAll(searchText).size();
             totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
             if (totalPageSize != 0) {

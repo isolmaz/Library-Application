@@ -5,11 +5,14 @@ import com.mhmtnasif.library_app.daoImpl.UserDaoImpl;
 import com.mhmtnasif.library_app.entities.Users;
 import com.mhmtnasif.library_app.util.Util;
 
+import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.swing.plaf.synth.SynthTextAreaUI;
 
 @ManagedBean
 @SessionScoped
@@ -19,6 +22,7 @@ public class LoginBean {
     private String username;
     private String password;
     private String passwordHash;
+
 
     public String login(){
 

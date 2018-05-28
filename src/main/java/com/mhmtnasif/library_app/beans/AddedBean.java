@@ -31,11 +31,13 @@ public class AddedBean {
     @PostConstruct
     public void init() {
         user=(Users) FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("valid_user");
-        rowsPerPage = 5;
-        totalRowSize = booksDao.findAllByUserId(searchText,user).size();
-        totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
-        currentPage = 1;
-        booksList = booksDao.findByRangeForSpecificUser((currentPage - 1) * rowsPerPage, rowsPerPage, searchText,user);
+        if (user != null){
+            rowsPerPage = 5;
+            totalRowSize = booksDao.findAllByUserId(searchText,user).size();
+            totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
+            currentPage = 1;
+            booksList = booksDao.findByRangeForSpecificUser((currentPage - 1) * rowsPerPage, rowsPerPage, searchText,user);
+        }
 
     }
 

@@ -7,74 +7,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8827c4b4-02a5-4a61-8ac0-048e9171b374" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/UsersDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Users.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Util.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/added.xhtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/login.xhtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/logout.xhtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/register.xhtml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/user.xhtml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b977094-4276-4e13-9713-9d7aca0b3591.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AuthorEditBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AuthorEditBean.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AuthorsBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AuthorsBean.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/BooksBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/BooksBean.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/BooksEditBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/BooksEditBean.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/PublisherEditBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/PublisherEditBean.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/PublishersBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/PublishersBean.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/İndexBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/İndexBean.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/dao/BooksDao.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/dao/BooksDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/dao/daoImpl/AuthorsDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/dao/daoImpl/BooksDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/dao/daoImpl/PublishersDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/entities/Books.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/entities/Books.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authors.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authors.xhtml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authorsedit.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authorsedit.xhtml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/books.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/books.xhtml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/booksedit.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/booksedit.xhtml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/css/common.css" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/css/common.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/index.xhtml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishers.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishers.xhtml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishersedit.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishersedit.xhtml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublisherEditBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublisherEditBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/BooksDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/BooksDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AuthorEditBean.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AuthorEditBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AuthorsBean.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AuthorsBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/BooksBean.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/BooksBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/BooksEditBean.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/BooksEditBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/PublisherEditBean.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/PublisherEditBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/PublishersBean.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/PublishersBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/İndexBean.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/İndexBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/dao/BooksDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/dao/BooksDao.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/dao/daoImpl/AuthorsDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/dao/daoImpl/BooksDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/dao/daoImpl/PublishersDaoImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/entities/Books.class" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/entities/Books.class" />
-      <change beforePath="$PROJECT_DIR$/web/authors.xhtml" afterPath="$PROJECT_DIR$/web/authors.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/authorsedit.xhtml" afterPath="$PROJECT_DIR$/web/authorsedit.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/books.xhtml" afterPath="$PROJECT_DIR$/web/books.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/booksedit.xhtml" afterPath="$PROJECT_DIR$/web/booksedit.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/css/common.css" afterPath="$PROJECT_DIR$/web/css/common.css" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" afterPath="$PROJECT_DIR$/web/index.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/publishers.xhtml" afterPath="$PROJECT_DIR$/web/publishers.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/publishersedit.xhtml" afterPath="$PROJECT_DIR$/web/publishersedit.xhtml" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180130.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedInProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedinPostGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/add-content.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/linkedin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Library_Application_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Library_Application_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/55470135-9880-4b62-b447-4e0faa8dc00c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AddedBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AddedBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/LoginBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/İndexBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/İndexBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/util/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/util/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/added.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authors.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authorsedit.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/books.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/books.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/booksedit.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishers.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishers.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishersedit.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/user.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/user.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AddedBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AddedBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/LoginBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/İndexBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/İndexBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/util/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/util/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/added.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/my-content.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/authors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/authors.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/authorsedit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/authors-edit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/books.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/books.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/booksedit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/books-edit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/publishers.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/publishers.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/publishersedit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/publishers-edit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/user.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -116,14 +103,33 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="login.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users" pinned="false" current-in-tab="true">
+        <entry file="das://b224321d-6401-45ed-a66f-3b5c4cb32d86/schema/library/table/users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="jsf" />
         <option value="Interface" />
+        <option value="jsf" />
         <option value="Class" />
       </list>
     </option>
@@ -148,14 +154,12 @@
       <find>booksEditBean</find>
       <find>editshow</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\mhmtnasif\Library-Application\web</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/web/index.xhtml" root0="FORCE_HIGHLIGHTING" />
@@ -163,21 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/daoImpl/BooksDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorEditBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java" />
-        <option value="$PROJECT_DIR$/web/admin/index.xhtml" />
-        <option value="$PROJECT_DIR$/web/admin/login.xhtml" />
-        <option value="$PROJECT_DIR$/web/logout.xhtml" />
-        <option value="$PROJECT_DIR$/web/welcome.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/admin/AuthorsBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/admin/BooksEditBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/admin/PublisherEditBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/admin/PublishersBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/admin/HomeBean.java" />
-        <option value="$PROJECT_DIR$/web/admin/home.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/loginBean.java" />
-        <option value="$PROJECT_DIR$/web/admin/books.xhtml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/welcome.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java" />
         <option value="$PROJECT_DIR$/web/admin/publishers.xhtml" />
@@ -186,34 +175,49 @@
         <option value="$PROJECT_DIR$/web/admin/booksedit.xhtml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/mybooks.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/UsersDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java" />
         <option value="$PROJECT_DIR$/web/publishersedit.xhtml" />
-        <option value="$PROJECT_DIR$/web/publishers.xhtml" />
         <option value="$PROJECT_DIR$/web/authorsedit.xhtml" />
-        <option value="$PROJECT_DIR$/web/login.xhtml" />
-        <option value="$PROJECT_DIR$/web/css/common.css" />
         <option value="$PROJECT_DIR$/web/register.xhtml" />
-        <option value="$PROJECT_DIR$/web/user.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Users.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/web/authors.xhtml" />
         <option value="$PROJECT_DIR$/web/booksedit.xhtml" />
-        <option value="$PROJECT_DIR$/web/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/BooksDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublisherEditBean.java" />
         <option value="$PROJECT_DIR$/web/added.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java" />
-        <option value="$PROJECT_DIR$/web/books.xhtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/55470135-9880-4b62-b447-4e0faa8dc00c/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Util.java" />
+        <option value="$PROJECT_DIR$/web/add-content.xhtml" />
+        <option value="$PROJECT_DIR$/web/user.xhtml" />
+        <option value="$PROJECT_DIR$/web/my-content.xhtml" />
+        <option value="$PROJECT_DIR$/web/authors.xhtml" />
+        <option value="$PROJECT_DIR$/web/authors-edit.xhtml" />
+        <option value="$PROJECT_DIR$/web/books.xhtml" />
+        <option value="$PROJECT_DIR$/web/books-edit.xhtml" />
+        <option value="$PROJECT_DIR$/web/index.xhtml" />
+        <option value="$PROJECT_DIR$/web/publishers.xhtml" />
+        <option value="$PROJECT_DIR$/web/publishers-edit.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Constants.java" />
+        <option value="$PROJECT_DIR$/web/successful.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/SuccessfulBean.java" />
+        <option value="$PROJECT_DIR$/web/css/success.xhtml" />
+        <option value="$PROJECT_DIR$/web/success.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/success.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Post_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedinPostGet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/Constants.java" />
+        <option value="$PROJECT_DIR$/web/css/common.css" />
+        <option value="$PROJECT_DIR$/web/login.xhtml" />
       </list>
     </option>
   </component>
@@ -246,33 +250,22 @@
       <select />
     </treeState>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,7 +306,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="library_app" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
@@ -345,26 +338,31 @@
               <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
               <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="SearchEverywhereHistoryKey" value="da&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2711397" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="database.data.extractors.current.id" value="SQL Inserts" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -377,9 +375,11 @@
       <recent name="C:\Users\MHMTNASIF\Library-Application\src\main\java\com\mhmtnasif\library_app\entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mhmtnasif\Library-Application\src\main\java\com\mhmtnasif\library_app\util" />
+      <recent name="C:\Users\mhmtnasif\Library-Application\web" />
+      <recent name="C:\Users\mhmtnasif\Library-Application\web\images" />
       <recent name="C:\Users\MHMTNASIF\Library-Application\web" />
       <recent name="C:\Users\MHMTNASIF\Library-Application\web\admin" />
-      <recent name="C:\Users\MHMTNASIF\Library-Application\web\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -394,69 +394,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.54">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration name="AuthorsDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mhmtnasif.library_app.daoImpl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.mhmtnasif.library_app.daoImpl.AuthorsDaoImpl" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Library-Application" />
-      <envs />
-    </configuration>
-    <configuration name="BooksDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mhmtnasif.library_app.daoImpl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.mhmtnasif.library_app.daoImpl.BooksDaoImpl" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Library-Application" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -466,24 +411,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -496,15 +430,12 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
@@ -526,7 +457,6 @@
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="65364" />
       </RunnerSettings>
@@ -581,26 +511,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0.54" />
-      <item index="1" class="java.lang.String" itemvalue="Application.AuthorsDaoImpl" />
-      <item index="2" class="java.lang.String" itemvalue="Application.BooksDaoImpl" />
-    </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.BooksDaoImpl" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AuthorsDaoImpl" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -626,11 +536,15 @@
       <workItem from="1527168671099" duration="26228000" />
       <workItem from="1527214237501" duration="7347000" />
       <workItem from="1527289084423" duration="62000" />
+      <workItem from="1527305777021" duration="1136000" />
+      <workItem from="1527361871007" duration="238000" />
+      <workItem from="1527446080866" duration="9269000" />
+      <workItem from="1527504523040" duration="6717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153921000" />
+    <option name="totallyTimeSpent" value="171281000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -642,78 +556,80 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50396377" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21482277" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3533409" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45186862" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22019334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28992072" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78142697" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021482" side_tool="true" weight="0.50396377" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3295583" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32975295" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.21409395" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="JSF" order="3" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3533409" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.28917378" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3295583" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" visible="true" weight="0.45156696" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295583" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.33903134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16912752" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50396377" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482277" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3533409" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28992072" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45186862" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.78142697" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22019334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3295583" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Database Console" order="13" visible="true" weight="0.78142697" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" weight="0.45186862" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="JSF" order="7" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3295583" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021482" side_tool="true" weight="0.50396377" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.28992072" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3295583" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32975295" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22019334" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.21482277" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3533409" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -724,176 +640,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Users.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="27" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/HomeBean.java" />
-    <entry file="file://$PROJECT_DIR$/web/welcome.xhtml" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/14298884/1b977094-4276-4e13-9713-9d7aca0b3591/library.books" />
-    <entry file="das://table:/14298884/1b977094-4276-4e13-9713-9d7aca0b3591/library.users" />
-    <entry file="das://table:/14298884/1b977094-4276-4e13-9713-9d7aca0b3591/library.publishers" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ff37a5db-ca0e-4b5c-a160-5b75c94927d7/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="88" lean-forward="false" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/authors.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="60" column="83" lean-forward="false" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/user.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="210" column="7" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="210" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/authorsedit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="145" column="84" lean-forward="false" selection-start-line="145" selection-start-column="78" selection-end-line="145" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/logout.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/publishers.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="59" column="85" lean-forward="false" selection-start-line="59" selection-start-column="85" selection-end-line="59" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/publishersedit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="148" column="84" lean-forward="false" selection-start-line="148" selection-start-column="78" selection-end-line="148" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/booksedit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="250" column="39" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="250" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="180" column="55" lean-forward="true" selection-start-line="150" selection-start-column="28" selection-end-line="180" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SELECT_t___FROM_library_books_t.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/14298884/55470135-9880-4b62-b447-4e0faa8dc00c/library.publishers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/14298884/55470135-9880-4b62-b447-4e0faa8dc00c/library.books">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/14298884/55470135-9880-4b62-b447-4e0faa8dc00c/library.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/55470135-9880-4b62-b447-4e0faa8dc00c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="40" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/books.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/added.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/55470135-9880-4b62-b447-4e0faa8dc00c/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorEditBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -901,20 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
           <caret line="32" column="98" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="32" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -928,42 +677,42 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2496">
-          <caret line="116" column="28" lean-forward="false" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+          <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2392">
-          <caret line="92" column="16" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+          <caret line="92" column="16" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/UsersDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/PublishersDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -977,56 +726,42 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/AuthorsDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="30" />
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
-          <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2938">
-          <caret line="122" column="39" lean-forward="false" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1430">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Publishers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="14" column="106" lean-forward="false" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="106" />
+          <caret line="14" column="106" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="106" />
         </state>
       </provider>
     </entry>
@@ -1037,27 +772,208 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/JpaFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b224321d-6401-45ed-a66f-3b5c4cb32d86/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="390">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/authors-edit.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/books.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/books-edit.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/logout.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/publishers.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/publishers-edit.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="911">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="133" column="59" selection-start-line="133" selection-start-column="54" selection-end-line="133" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/my-content.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add-content.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="74" column="65" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/linkedin.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/SuccessfulBean.java" />
+    <entry file="file://$PROJECT_DIR$/web/successful.xhtml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/success.java" />
+    <entry file="file://$PROJECT_DIR$/web/success.xhtml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedinPostGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="230">
+          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/JpaFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Users.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+        <state>
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/authors.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="22" column="34" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b224321d-6401-45ed-a66f-3b5c4cb32d86/schema/library/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1080,7 +996,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA</last-edited>
+          <last-edited>Web (Library-Application)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1139,7 +1055,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.glassfish:javax.json:1.0.4</last-edited>
+          <last-edited>Mojarra-2.2.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

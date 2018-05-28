@@ -28,24 +28,25 @@ public class LoginFilter implements Filter {
             }
         } else {
             if (user.isAdmin()) {
-                if (url.contains("added") || url.contains("login") || url.contains("register") || url.contains("user")) {
+                if (url.contains("my-content") || url.contains("login") || url.contains("register") || url.contains("user") || url.contains("add-content")) {
                     response.sendRedirect(request.getContextPath() + "index.xhtml?faces-redirect=true");
-                }else if (url.contains("logout")) {
+                } else if (url.contains("logout")) {
                     request.getSession().invalidate();
                     response.sendRedirect(request.getContextPath() + "login.xhtml?faces-redirect=true");
                     return;
                 }
             } else {
                 if (url.contains("authors") ||
-                        url.contains("authorsedit")||
-                        url.contains("booksedit") ||
+                        url.contains("authors-edit") ||
+                        url.contains("books") ||
+                        url.contains("books-edit") ||
                         url.contains("index") ||
                         url.contains("login") ||
                         url.contains("publishers") ||
-                        url.contains("publishersedit") ||
+                        url.contains("publishers-edit") ||
                         url.contains("register")) {
                     response.sendRedirect(request.getContextPath() + "user.xhtml?faces-redirect=true");
-                }else if (url.contains("logout")) {
+                } else if (url.contains("logout")) {
                     request.getSession().invalidate();
                     response.sendRedirect(request.getContextPath() + "login.xhtml?faces-redirect=true");
                     return;

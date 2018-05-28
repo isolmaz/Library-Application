@@ -26,25 +26,13 @@
                 <div class="center-block">
                     <ul class="center-block">
                         <li>
-                            <a href="index.xhtml">Home</a>
+                            <a href="user.xhtml">Home</a>
                         </li>
                         <li>
-                            <a href="authors.xhtml">Add Author</a>
+                            <a class="active" href="add-content.xhtml">Add Book</a>
                         </li>
                         <li>
-                            <a href="publishers.xhtml">Add Publisher</a>
-                        </li>
-                        <li>
-                            <a class="active" href="books.xhtml">Add Book</a>
-                        </li>
-                        <li>
-                            <a  href="authors-edit.xhtml">Edit/Delete/Search Author</a>
-                        </li>
-                        <li>
-                            <a  href="publishers-edit.xhtml">Edit/Delete/Search Publisher</a>
-                        </li>
-                        <li>
-                            <a  href="books-edit.xhtml">Edit/Delete/Search Books</a>
+                            <a  href="my-content.xhtml">My Books</a>
                         </li>
                         <li>
                             <a  href="logout.xhtml">logout</a>
@@ -64,15 +52,15 @@
                         <h:panelGrid id="grid" columns="2" cellpadding="5">
                             <h:outputLabel style="margin:10px 20px 10px 0px" value="Name:*"/>
                             <h:inputText  styleClass="form-control" style="margin:10px 20px 10px 0px" maxlength="255"
-                                         value="#{booksBean.books.book_name}"/>
+                                          value="#{booksBean.books.book_name}"/>
 
                             <h:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="Sub Name:*"/>
                             <h:inputText  styleClass="form-control" style="margin-bottom: 10px" maxlength="255"
-                                         value="#{booksBean.books.book_sub_name}"/>
+                                          value="#{booksBean.books.book_sub_name}"/>
 
                             <h:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="Serial Name:*"/>
                             <h:inputText  styleClass="form-control" style="margin-bottom: 10px" maxlength="255"
-                                         value="#{booksBean.books.book_serial_name}"/>
+                                          value="#{booksBean.books.book_serial_name}"/>
 
 
                             <h:outputLabel style="margin-bottom: 10px;" value="Author: "/>
@@ -89,18 +77,18 @@
 
                             <h:outputLabel style="margin-bottom: 10px;margin-right: 20px" value="ISBN number:*"/>
                             <h:inputText  styleClass="form-control" style="margin-bottom: 10px" maxlength="255"
-                                         value="#{booksBean.books.book_isbn}"/>
+                                          value="#{booksBean.books.book_isbn}"/>
 
 
                             <h:outputLabel style="margin-right: 10px" value="Description :*"/>
                             <h:inputTextarea  styleClass="form-control" value="#{booksBean.books.book_desc}" rows="5"
-                                             cols="30" maxlength="2000" autoResize="false"/>
+                                              cols="30" maxlength="2000" autoResize="false"/>
 
                         </h:panelGrid>
                         <!--END OF PANEL GRID-->
                         <!--SAVE BUTTON-->
                         <h:commandLink styleClass="btn btn-success" value="Save" id="ajax" update="messages"
-                                         action="#{booksBean.addBook}" />
+                                       action="#{booksBean.addBook}" />
                         <!--END OF SAVE BUTTON-->
                     </h:form>
                     <!--END OF FORM-->

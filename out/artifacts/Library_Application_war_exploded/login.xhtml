@@ -13,7 +13,19 @@
             type="application/javascript"/>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
             type="application/javascript"/>
-
+    <style type="text/css">
+        .linkedin{
+            background-color: #f44336;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 5px;
+            border-radius: 5px;
+            width: 100%;
+            display: inline-block;
+        }
+    </style>
     <title>Library Application</title>
 </h:head>
 <h:body>
@@ -32,10 +44,15 @@
                     <h:inputSecret value="#{loginBean.password}" class="form-control" id="exampleInputPassword1" a:placeholder="Password"/>
                 </div>
                 <br/>
-               <div class="">
+               <div >
                    <h:commandButton action="#{loginBean.login()}" class="btn btn-primary btn-block" value="login"/>
                    <h:commandButton action="register.xhtml?faces-redirect=true" class="btn btn-info btn-block" value="Sign up"/>
                </div>
+                <div style="cursor: pointer">
+                    <h:outputLink  styleClass="linkedin"  value="https://www.linkedin.com/oauth/v2/authorization?response_type=code&amp;client_id=#{constants.client_id}&amp;redirect_uri=#{constants.redirect_url}&amp;state=aasdaşöçmccaasda&amp;scope=r_basicprofile%20r_emailaddress" >
+                        <h:outputLabel value="Login with Linkedin"/>
+                    </h:outputLink>
+                </div>
             </div>
             <div class="col-sm-4"></div>
         </div>
