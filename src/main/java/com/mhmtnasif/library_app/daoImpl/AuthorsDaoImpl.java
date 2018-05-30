@@ -61,12 +61,12 @@ public class AuthorsDaoImpl implements AuthorsDao {
     public List<Authors> findAll(String searchText) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Authors> authorsTypedQuery;
-        List<Authors> authors=null;
+        List<Authors> authors = null;
         if (searchText != null) {
             authorsTypedQuery = entityManager.createNamedQuery("Authors.findAllBySearch", Authors.class);
             authorsTypedQuery.setParameter("param", searchText.toLowerCase());
             authors = authorsTypedQuery.getResultList();
-        }else{
+        } else {
             authorsTypedQuery = entityManager.createNamedQuery("Authors.findAll", Authors.class);
             authors = authorsTypedQuery.getResultList();
         }
@@ -78,14 +78,14 @@ public class AuthorsDaoImpl implements AuthorsDao {
     public List<Authors> findByRange(int first, int max, String searchText) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Authors> authorsTypedQuery;
-        List<Authors> authors=null;
-        if (searchText!=null) {
+        List<Authors> authors = null;
+        if (searchText != null) {
             authorsTypedQuery = entityManager.createNamedQuery("Authors.findAllBySearch", Authors.class);
             authorsTypedQuery.setParameter("param", searchText.toLowerCase());
             authorsTypedQuery.setFirstResult(first);
             authorsTypedQuery.setMaxResults(max);
             authors = authorsTypedQuery.getResultList();
-        }else{
+        } else {
             authorsTypedQuery = entityManager.createNamedQuery("Authors.findAll", Authors.class);
             authorsTypedQuery.setFirstResult(first);
             authorsTypedQuery.setMaxResults(max);

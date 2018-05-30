@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="10" failures="0" name="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" time="0.558" errors="10" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
+    <property name="java.vm.version" value="25.171-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mhmtnasif\Library-Application"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\mhmtnasif\Library-Application"/>
+    <property name="java.runtime.version" value="1.8.0_171-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\MHMTNA~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="net.sourceforge.cobertura.datafile" value="C:\Users\mhmtnasif\Library-Application\target\cobertura\cobertura.ser"/>
+    <property name="classworlds.conf" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1254"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\mhmtnasif\AppData\Local\Microsoft\WindowsApps;C:\Users\mhmtnasif\AppData\Local\atom\bin;C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin;;."/>
+    <property name="maven.conf" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\mhmtnasif"/>
+    <property name="user.timezone" value="Asia/Istanbul"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1254"/>
+    <property name="user.name" value="mhmtnasif"/>
+    <property name="java.class.path" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_171\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher site"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="tr"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_171"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp857"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="C:\Users\mhmtnasif\Library-Application\target\generated-classes\cobertura"/>
+    <property name="sun.stdout.encoding" value="cp857"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="findByAuthorId" time="0.018">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.314--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.321--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (İD = ?)
+	bind =&gt; [87]
+[EL Fine]: sql: 2018-05-30 05:00:28.324--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, İSADMİN, PASSWORD, USERNAME FROM USERS WHERE (İD = ?)
+	bind =&gt; [2]
+[EL Fine]: sql: 2018-05-30 05:00:28.327--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (İD = ?)
+	bind =&gt; [2]
+[EL Fine]: sql: 2018-05-30 05:00:28.333--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (İD = ?)
+	bind =&gt; [3]
+[EL Fine]: sql: 2018-05-30 05:00:28.337--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, İSADMİN, PASSWORD, USERNAME FROM USERS WHERE (İD = ?)
+	bind =&gt; [3]
+[EL Fine]: sql: 2018-05-30 05:00:28.363--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="findAllByUserId" time="0.052">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.394--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.418--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="addBook" time="0.051">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.445--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.47--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="deleteBooks" time="0.048">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.497--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.518--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="findAll" time="0.049">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.545--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.568--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="findByPublisherId" time="0.067">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.596--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.633--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="updateBook" time="0.055">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.662--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.688--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="findByRange" time="0.057">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.719--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.746--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="findByRangeForSpecificUser" time="0.079">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: sql: 2018-05-30 05:00:28.775--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.797--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest" name="deleteBook" time="0.082">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImpl.findByAuthorId(BooksDaoImpl.java:106)
+	at com.mhmtnasif.library_app.daoImpl.BooksDaoImplTest.setUp(BooksDaoImplTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Config]: connection: 2018-05-30 05:00:28.851--ServerSession(1062334031)--Connection(1415884075)--Thread(Thread[Finalizer,8,system])--disconnect
+[EL Info]: connection: 2018-05-30 05:00:28.852--ServerSession(1062334031)--Thread(Thread[Finalizer,8,system])--/file:/C:/Users/mhmtnasif/Library-Application/target/generated-classes/cobertura/_LibraryPersistenceUnit logout successful
+[EL Config]: connection: 2018-05-30 05:00:28.853--ServerSession(1062334031)--Connection(981742471)--Thread(Thread[Finalizer,8,system])--disconnect
+[EL Warning]: 2018-05-30 05:00:28.853--Thread(Thread[Finalizer,8,system])--session_manager_no_partition
+[EL Fine]: sql: 2018-05-30 05:00:28.859--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT t0.İD, t0.BOOK_DESC, t0.BOOK_İSBN, t0.BOOK_NAME, t0.BOOK_SERİAL_NAME, t0.BOOK_SUB_NAME, t0.BOOK_AUTHOR_İD, t0.BOOK_PUBLİSHER_İD, t0.BOOK_USER_İD FROM BOOKS t0, PUBLİSHERS t2, AUTHORS t1 WHERE (((((((LOWER(t0.BOOK_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(t0.BOOK_SUB_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_SERİAL_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_İSBN) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t0.BOOK_DESC) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t1.AUTHORS_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) OR LOWER(t2.PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?)) AND ((t1.İD = t0.BOOK_AUTHOR_İD) AND (t2.İD = t0.BOOK_PUBLİSHER_İD)))
+	bind =&gt; [%, , %, %, , %, %, , %, %, , %, %, , %, %, , %, %, , %]
+[EL Fine]: sql: 2018-05-30 05:00:28.905--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, AUTHORS_DESC, AUTHORS_NAME FROM AUTHORS WHERE (İD = ?)
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+</testsuite>

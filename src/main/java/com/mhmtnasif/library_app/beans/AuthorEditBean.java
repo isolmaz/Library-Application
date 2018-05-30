@@ -36,7 +36,6 @@ public class AuthorEditBean {
         totalPageSize = (int) Math.ceil((double) totalRowSize / (double) rowsPerPage);
         currentPage = 1;
         authorList = authorsDao.findByRange((currentPage - 1) * rowsPerPage, rowsPerPage, searchText);
-
     }
 
 
@@ -136,6 +135,14 @@ public class AuthorEditBean {
         }
 
 
+    }
+
+    public int getTotalRowSize() {
+        return totalRowSize;
+    }
+
+    public void setTotalRowSize(int totalRowSize) {
+        this.totalRowSize = totalRowSize;
     }
 
     public List<Authors> getAuthorList() {

@@ -88,7 +88,7 @@ public class AddedBean {
             currentPage = 1;
             booksList = booksDao.findByRangeForSpecificUser((currentPage - 1) * rowsPerPage, rowsPerPage, searchText,user);
         } else {
-            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There aren't any book like " + searchText + " in the database. ", "There aren't any publisher like " + searchText + " in the database. "));
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "There aren't any book like " + searchText + " in the database. ", "There aren't any book like " + searchText + " in the database. "));
             searchText = "";
             init();
         }

@@ -53,7 +53,7 @@ public class BooksBean {
                 this.books.getBook_desc().equals("") ||
                 this.books.getBook_desc() == null) {
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(
-                    FacesMessage.SEVERITY_ERROR, "There are empty spaces", "There are empty spaces"
+                    FacesMessage.SEVERITY_INFO, "There are empty spaces", "There are empty spaces"
             ));
         } else {
             this.books.setBook_author(authorsDao.findById(author_id));
@@ -69,7 +69,7 @@ public class BooksBean {
                 publisher_id=-999;
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successful", "Successful"));
             } else {
-                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Unexpected error occurred!", "Unexpected error occurred!"));
+                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Unexpected error occurred!", "Unexpected error occurred!"));
             }
         }
     }

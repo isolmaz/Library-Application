@@ -7,61 +7,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8827c4b4-02a5-4a61-8ac0-048e9171b374" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180130.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedInProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedinPostGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/add-content.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/linkedin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Library_Application_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Library_Application_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/Library_Application_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Library_Application_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/55470135-9880-4b62-b447-4e0faa8dc00c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b224321d-6401-45ed-a66f-3b5c4cb32d86.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b224321d-6401-45ed-a66f-3b5c4cb32d86.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library-Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Application.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AddedBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AddedBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AuthorEditBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AuthorEditBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AuthorsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/AuthorsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/BooksBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/BooksBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/BooksEditBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/BooksEditBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/LoginBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/İndexBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/İndexBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/util/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/util/LoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/added.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authors.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/authorsedit.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/books.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/books.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/booksedit.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/login.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishers.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishers.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/publishersedit.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/user.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/user.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/PublishersBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/PublishersBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/RegisterBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/beans/RegisterBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/dao/UsersDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/dao/UsersDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/entities/Authors.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/entities/Authors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/entities/Books.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/entities/Books.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/entities/Publishers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/classes/com/mhmtnasif/library_app/entities/Publishers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/lib/javax.persistence-2.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/lib/org.eclipse.persistence.antlr-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/lib/org.eclipse.persistence.asm-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/lib/org.eclipse.persistence.core-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/lib/org.eclipse.persistence.jpa-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_Application_war_exploded/WEB-INF/lib/org.eclipse.persistence.jpa.jpql-2.7.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorEditBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorEditBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/UsersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/UsersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Authors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Authors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Publishers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Publishers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AddedBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AddedBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorEditBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorEditBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorsBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorsBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/BooksBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/BooksBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/BooksEditBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/BooksEditBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/IndexBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/IndexBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/LoginBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/LoginBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/PublisherEditBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/PublisherEditBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/PublishersBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/PublishersBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/RegisterBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/RegisterBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/UserDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/UserDaoImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AddedBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AddedBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AuthorEditBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AuthorEditBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AuthorsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/AuthorsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/BooksBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/BooksBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/BooksEditBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/BooksEditBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/LoginBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/İndexBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/İndexBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/util/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/util/LoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/added.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/my-content.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/authors.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/authors.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/authorsedit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/authors-edit.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/books.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/books.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/booksedit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/books-edit.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/publishers.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/publishers.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/publishersedit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/publishers-edit.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/user.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/PublishersBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/PublishersBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/RegisterBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/RegisterBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/beans/İndexBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/dao/UsersDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/dao/UsersDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/entities/Authors.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/entities/Authors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/entities/Books.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/entities/Books.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/entities/Publishers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mhmtnasif/library_app/entities/Publishers.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,6 +85,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Library_Application$AuthorEditBeanTest.ic" NAME="AuthorEditBeanTest Coverage Results" MODIFIED="1527609911002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.mhmtnasif.library_app.beans.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -104,20 +123,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login.xhtml">
+      <file leaf-file-name="AuthorsDaoImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users" pinned="false" current-in-tab="true">
-        <entry file="das://b224321d-6401-45ed-a66f-3b5c4cb32d86/schema/library/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="52">
+              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -131,6 +141,8 @@
         <option value="Interface" />
         <option value="jsf" />
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -153,6 +165,8 @@
       <find>cance</find>
       <find>booksEditBean</find>
       <find>editshow</find>
+      <find>!=null</find>
+      <find>class</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\mhmtnasif\Library-Application\web</dir>
@@ -167,34 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/welcome.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java" />
-        <option value="$PROJECT_DIR$/web/admin/publishers.xhtml" />
-        <option value="$PROJECT_DIR$/web/admin/authors.xhtml" />
-        <option value="$PROJECT_DIR$/web/admin/authorsedit.xhtml" />
-        <option value="$PROJECT_DIR$/web/admin/booksedit.xhtml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/mybooks.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/UsersDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java" />
-        <option value="$PROJECT_DIR$/web/publishersedit.xhtml" />
-        <option value="$PROJECT_DIR$/web/authorsedit.xhtml" />
-        <option value="$PROJECT_DIR$/web/register.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Users.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/web/booksedit.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/BooksDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublisherEditBean.java" />
-        <option value="$PROJECT_DIR$/web/added.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/55470135-9880-4b62-b447-4e0faa8dc00c/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Util.java" />
-        <option value="$PROJECT_DIR$/web/add-content.xhtml" />
-        <option value="$PROJECT_DIR$/web/user.xhtml" />
-        <option value="$PROJECT_DIR$/web/my-content.xhtml" />
         <option value="$PROJECT_DIR$/web/authors.xhtml" />
         <option value="$PROJECT_DIR$/web/authors-edit.xhtml" />
         <option value="$PROJECT_DIR$/web/books.xhtml" />
@@ -202,7 +188,6 @@
         <option value="$PROJECT_DIR$/web/index.xhtml" />
         <option value="$PROJECT_DIR$/web/publishers.xhtml" />
         <option value="$PROJECT_DIR$/web/publishers-edit.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Constants.java" />
         <option value="$PROJECT_DIR$/web/successful.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/SuccessfulBean.java" />
@@ -210,14 +195,43 @@
         <option value="$PROJECT_DIR$/web/success.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/success.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Post_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedinPostGet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/Constants.java" />
         <option value="$PROJECT_DIR$/web/css/common.css" />
         <option value="$PROJECT_DIR$/web/login.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/UsersDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Authors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Publishers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/UserDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorEditBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorsBean.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/BooksEditBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/IndexBean.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/IndexBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AddedBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorEditBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorsBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/BooksBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/LoginBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/PublisherEditBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/PublishersBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/RegisterBeanTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -234,6 +248,13 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Documents/apache-maven-3.5.2" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -244,7 +265,12 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Library-Application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Library-Application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
       </expand>
       <select />
@@ -254,9 +280,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -266,6 +293,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,47 +336,42 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="library_app" type="462c0819:PsiDirectoryNode" />
+              <item name="daoImpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library_app" type="462c0819:PsiDirectoryNode" />
               <item name="beans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Library-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-Application" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,6 +379,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -362,24 +390,31 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2711397" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mhmtnasif.library_app.util" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mhmtnasif.library_app.beans" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mhmtnasif\Library-Application\src\test\java\com\mhmtnasif\library_app\beans" />
+      <recent name="C:\Users\mhmtnasif\Library-Application\src\main\java\com\mhmtnasif\library_app\util" />
+      <recent name="C:\Users\mhmtnasif\Library-Application\web" />
+      <recent name="C:\Users\mhmtnasif\Library-Application\web\images" />
+      <recent name="C:\Users\MHMTNASIF\Library-Application\web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mhmtnasif\Library-Application\src\test\java" />
       <recent name="C:\Users\MHMTNASIF\Library-Application\web" />
       <recent name="C:\Users\MHMTNASIF\Library-Application\src\main\java\com\mhmtnasif\library_app\beans" />
       <recent name="C:\Users\MHMTNASIF\Library-Application\src\main\java\com\mhmtnasif\library_app\dao\daoImpl" />
       <recent name="C:\Users\MHMTNASIF\Library-Application\src\main\java\com\mhmtnasif\library_app\entities" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mhmtnasif\Library-Application\src\main\java\com\mhmtnasif\library_app\util" />
-      <recent name="C:\Users\mhmtnasif\Library-Application\web" />
-      <recent name="C:\Users\mhmtnasif\Library-Application\web\images" />
-      <recent name="C:\Users\MHMTNASIF\Library-Application\web" />
-      <recent name="C:\Users\MHMTNASIF\Library-Application\web\admin" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mhmtnasif.library_app.util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -540,11 +575,46 @@
       <workItem from="1527361871007" duration="238000" />
       <workItem from="1527446080866" duration="9269000" />
       <workItem from="1527504523040" duration="6717000" />
+      <workItem from="1527560800398" duration="1417000" />
+      <workItem from="1527595640900" duration="28300000" />
+      <workItem from="1527630828253" duration="11607000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="PublisherEditBeanTest_isListEmpty - 2018.05.30 at 04h 12m 02s.xml">
+      <configuration name="PublisherEditBeanTest.isListEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PublisherEditBeanTest - 2018.05.30 at 04h 14m 50s.xml">
+      <configuration name="PublisherEditBeanTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PublisherEditBeanTest - 2018.05.30 at 04h 18m 17s.xml">
+      <configuration name="PublisherEditBeanTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PublishersBeanTest - 2018.05.30 at 04h 22m 40s.xml">
+      <configuration name="PublishersBeanTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PublishersBeanTest - 2018.05.30 at 04h 23m 36s.xml">
+      <configuration name="PublishersBeanTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisterBeanTest_signUpWeAlreadyHasUser - 2018.05.30 at 04h 29m 58s.xml">
+      <configuration name="RegisterBeanTest.signUpWeAlreadyHasUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisterBeanTest - 2018.05.30 at 04h 30m 42s.xml">
+      <configuration name="RegisterBeanTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisterBeanTest_signUp - 2018.05.30 at 04h 32m 09s.xml">
+      <configuration name="RegisterBeanTest.signUp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisterBeanTest_signUp - 2018.05.30 at 04h 33m 09s.xml">
+      <configuration name="RegisterBeanTest.signUp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisterBeanTest - 2018.05.30 at 04h 33m 40s.xml">
+      <configuration name="RegisterBeanTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171281000" />
+    <option name="totallyTimeSpent" value="212605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,76 +630,79 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021482" side_tool="true" weight="0.50396377" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3295583" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32975295" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.21409395" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5021482" side_tool="true" weight="0.50396377" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32905984" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.3295302" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Database" order="6" weight="0.21409395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="JSF" order="3" />
+      <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3533409" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35185185" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.28917378" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3295583" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" visible="true" weight="0.45156696" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295583" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.28917378" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3295583" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" weight="0.34615386" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36039886" />
       <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.33903134" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16912752" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17516778" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="right" id="Mongo Explorer" order="8" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.33903134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3295302" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
     </layout>
     <layout-to-restore>
-      <window_info id="Persistence" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3295583" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32905984" />
       <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.33903134" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Database Console" order="13" visible="true" weight="0.78142697" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" weight="0.45186862" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" weight="0.34615386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="JSF" order="7" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3295583" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021482" side_tool="true" weight="0.50396377" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.28992072" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36039886" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="JSF" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5021482" side_tool="true" weight="0.50396377" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.28917378" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
-      <window_info anchor="right" id="Mongo Explorer" order="5" />
+      <window_info anchor="right" id="Mongo Explorer" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="5" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3295583" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32975295" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22019334" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.21482277" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.3295302" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17516778" />
+      <window_info anchor="right" id="Database" order="6" weight="0.21409395" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3533409" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35185185" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,287 +721,115 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="53" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/55470135-9880-4b62-b447-4e0faa8dc00c/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorEditBean.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0-sources.jar!/org/junit/runner/JUnitCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="143">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorsBean.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0-sources.jar!/org/junit/internal/runners/TestClassRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="32" column="98" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="32" selection-end-column="98" />
+        <state relative-caret-position="135">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublisherEditBean.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0-sources.jar!/org/junit/internal/runners/BeforeAndAfterRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1586">
-          <caret line="74" column="46" lean-forward="true" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
+        <state relative-caret-position="143">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0-sources.jar!/org/junit/internal/runners/TestMethodRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="225">
+          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2496">
-          <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2392">
-          <caret line="92" column="16" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/UsersDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/PublishersDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/BooksDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/dao/AuthorsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Publishers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Books.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorEditBeanTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="14" column="106" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Authors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="22" column="57" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/JpaFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b224321d-6401-45ed-a66f-3b5c4cb32d86/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/authors-edit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/books.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/books-edit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/logout.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/publishers.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/publishers-edit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="911">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="133" column="59" selection-start-line="133" selection-start-column="54" selection-end-line="133" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/my-content.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/add-content.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="74" column="65" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/user.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/linkedin.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/SuccessfulBean.java" />
-    <entry file="file://$PROJECT_DIR$/web/successful.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/success.java" />
-    <entry file="file://$PROJECT_DIR$/web/success.xhtml" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedinPostGet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="1144">
           <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/entities/Users.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/LinkedinPostGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="-1426">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2220">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/powermock/powermock-reflect/1.6.2/powermock-reflect-1.6.2-sources.jar!/org/powermock/reflect/internal/WhiteboxImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/MethodRoadie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/powermock/powermock-module-junit4/1.6.2/powermock-module-junit4-1.6.2-sources.jar!/org/powermock/modules/junit4/internal/impl/PowerMockJUnit47RunnerDelegateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/powermock/powermock-module-junit4/1.6.2/powermock-module-junit4-1.6.2-sources.jar!/org/powermock/modules/junit4/internal/impl/PowerMockJUnit44RunnerDelegateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="297" selection-start-line="297" selection-end-line="297" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19-sources.jar!/org/mockito/ArgumentCaptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -936,37 +837,263 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="14" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/BooksDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/UserDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/İndexBean.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/PublishersDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="1482">
+          <caret line="63" column="132" selection-start-line="63" selection-start-column="132" selection-end-line="63" selection-end-column="132" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/authors.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="22" column="34" selection-start-line="22" selection-end-line="23" />
+        <state relative-caret-position="150">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/common.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="316">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.xhtml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+        <state relative-caret-position="38">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/powermock/powermock-core/1.6.2/powermock-core-1.6.2-sources.jar!/org/powermock/core/MockGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="223" selection-start-line="223" selection-end-line="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksEditBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1258">
+          <caret line="142" column="197" selection-start-line="142" selection-start-column="197" selection-end-line="142" selection-end-column="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AddedBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2080">
+          <caret line="90" column="197" selection-start-line="90" selection-start-column="197" selection-end-line="90" selection-end-column="197" />
+          <folding>
+            <element signature="e#1517#1518#0" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b224321d-6401-45ed-a66f-3b5c4cb32d86/schema/library/table/publishers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b224321d-6401-45ed-a66f-3b5c4cb32d86/schema/library/table/authors">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/BooksBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add-content.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="54" column="55" lean-forward="true" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/AuthorEditBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2660">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/IndexBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+            <element signature="e#4508#4509#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="e#4575#4576#0" expanded="true" />
+            <element signature="e#4607#4608#0" expanded="true" />
+            <element signature="e#4639#4640#0" expanded="true" />
+            <element signature="e#4667#4668#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4743#4744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/LoginBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="47" column="58" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AddedBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2730">
+          <caret line="127" column="42" selection-start-line="127" selection-start-column="33" selection-end-line="127" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/BooksBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/BooksEditBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3692">
+          <caret line="157" column="33" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/IndexBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublisherEditBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2905">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorEditBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="172" column="1" lean-forward="true" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/PublisherEditBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4030">
+          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/AuthorsBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/PublishersBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1066">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/PublishersBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="40" column="109" selection-start-line="40" selection-start-column="109" selection-end-line="40" selection-end-column="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/LoginBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1082">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -974,6 +1101,34 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhmtnasif/library_app/beans/RegisterBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/beans/RegisterBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b224321d-6401-45ed-a66f-3b5c4cb32d86/schema/library/table/books">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhmtnasif/library_app/daoImpl/AuthorsDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1031,11 +1186,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|Library-Application</last-edited>
+          <last-edited>Library-Application</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2711397" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

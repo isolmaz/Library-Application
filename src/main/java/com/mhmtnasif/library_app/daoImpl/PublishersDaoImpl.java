@@ -11,16 +11,16 @@ import java.util.List;
 public class PublishersDaoImpl implements PublishersDao {
 
     public boolean addPublisher(Publishers publishers) {
-        EntityManager entityManager= JpaFactory.getInstance().getEntityManager();
+        EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         try {
             entityManager.getTransaction().begin();
             entityManager.persist(publishers);
             entityManager.flush();
             entityManager.getTransaction().commit();
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
-        }finally {
+        } finally {
             entityManager.close();
             JpaFactory.getInstance().CloseFactory();
         }
@@ -62,12 +62,12 @@ public class PublishersDaoImpl implements PublishersDao {
     public List<Publishers> findAll(String searchText) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Publishers> PublishersTypedQuery;
-        List<Publishers> publishers=null;
+        List<Publishers> publishers = null;
         if (searchText != null) {
             PublishersTypedQuery = entityManager.createNamedQuery("Publishers.findAllBySearch", Publishers.class);
             PublishersTypedQuery.setParameter("param", searchText.toLowerCase());
             publishers = PublishersTypedQuery.getResultList();
-        }else{
+        } else {
             PublishersTypedQuery = entityManager.createNamedQuery("Publishers.findAll", Publishers.class);
             publishers = PublishersTypedQuery.getResultList();
         }
@@ -79,14 +79,14 @@ public class PublishersDaoImpl implements PublishersDao {
     public List<Publishers> findByRange(int first, int max, String searchText) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Publishers> publishersTypedQuery;
-        List<Publishers> publishers=null;
-        if (searchText!=null) {
+        List<Publishers> publishers = null;
+        if (searchText != null) {
             publishersTypedQuery = entityManager.createNamedQuery("Publishers.findAllBySearch", Publishers.class);
             publishersTypedQuery.setParameter("param", searchText.toLowerCase());
             publishersTypedQuery.setFirstResult(first);
             publishersTypedQuery.setMaxResults(max);
             publishers = publishersTypedQuery.getResultList();
-        }else{
+        } else {
             publishersTypedQuery = entityManager.createNamedQuery("Publishers.findAll", Publishers.class);
             publishersTypedQuery.setFirstResult(first);
             publishersTypedQuery.setMaxResults(max);
@@ -101,7 +101,7 @@ public class PublishersDaoImpl implements PublishersDao {
 
     public Publishers findById(long id) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
-        Publishers publishers=entityManager.find(Publishers.class,id);
+        Publishers publishers = entityManager.find(Publishers.class, id);
         entityManager.close();
         JpaFactory.getInstance().CloseFactory();
         return publishers;

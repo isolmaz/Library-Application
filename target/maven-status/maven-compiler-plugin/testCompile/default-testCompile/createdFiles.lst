@@ -1,0 +1,10 @@
+com\mhmtnasif\library_app\daoImpl\UserDaoImplTest.class
+com\mhmtnasif\library_app\daoImpl\BooksDaoImplTest.class
+com\mhmtnasif\library_app\beans\AuthorsBeanTest.class
+com\mhmtnasif\library_app\beans\BooksBeanTest.class
+com\mhmtnasif\library_app\beans\AddedBeanTest.class
+com\mhmtnasif\library_app\beans\BooksEditBeanTest.class
+com\mhmtnasif\library_app\daoImpl\PublishersDaoImplTest.class
+com\mhmtnasif\library_app\beans\AuthorEditBeanTest.class
+com\mhmtnasif\library_app\daoImpl\AuthorsDaoImplTest.class
+com\mhmtnasif\library_app\beans\IndexBeanTest.class

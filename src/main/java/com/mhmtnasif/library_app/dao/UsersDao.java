@@ -8,4 +8,10 @@ public interface UsersDao {
     Users addUser(Users users);
     long login(String username,String password);
     Users findUserByUserName(String username);
+
+    class NoResult extends RuntimeException {
+        public NoResult(String s) {
+            System.out.println(s);
+        }
+    }
 }

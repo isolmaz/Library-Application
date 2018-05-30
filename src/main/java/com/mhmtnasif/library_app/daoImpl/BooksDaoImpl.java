@@ -64,12 +64,12 @@ public class BooksDaoImpl implements BooksDao {
     public List<Books> findAll(String searchText) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Books> booksTypedQuery;
-        List<Books> books=null;
+        List<Books> books = null;
         if (searchText != null) {
             booksTypedQuery = entityManager.createNamedQuery("Books.findAllBySearch", Books.class);
             booksTypedQuery.setParameter("param", searchText.toLowerCase());
             books = booksTypedQuery.getResultList();
-        }else{
+        } else {
             booksTypedQuery = entityManager.createNamedQuery("Books.findAll", Books.class);
             books = booksTypedQuery.getResultList();
         }
@@ -81,14 +81,14 @@ public class BooksDaoImpl implements BooksDao {
     public List<Books> findByRange(int first, int max, String searchText) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Books> booksTypedQuery;
-        List<Books> books=null;
-        if (searchText!=null) {
+        List<Books> books = null;
+        if (searchText != null) {
             booksTypedQuery = entityManager.createNamedQuery("Books.findAllBySearch", Books.class);
             booksTypedQuery.setParameter("param", searchText.toLowerCase());
             booksTypedQuery.setFirstResult(first);
             booksTypedQuery.setMaxResults(max);
             books = booksTypedQuery.getResultList();
-        }else{
+        } else {
             booksTypedQuery = entityManager.createNamedQuery("Books.findAll", Books.class);
             booksTypedQuery.setFirstResult(first);
             booksTypedQuery.setMaxResults(max);
@@ -120,18 +120,18 @@ public class BooksDaoImpl implements BooksDao {
         return booksList;
     }
 
-    public List<Books> findAllByUserId(String searchText,Users user) {
+    public List<Books> findAllByUserId(String searchText, Users user) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Books> booksTypedQuery;
-        List<Books> books=null;
+        List<Books> books = null;
         if (searchText != null) {
             booksTypedQuery = entityManager.createNamedQuery("Books.findAllByUserIdSearch", Books.class);
             booksTypedQuery.setParameter("param", searchText.toLowerCase());
             booksTypedQuery.setParameter("user", user.getId());
             books = booksTypedQuery.getResultList();
-        }else{
+        } else {
             booksTypedQuery = entityManager.createNamedQuery("Books.findAllByUserId", Books.class);
-            booksTypedQuery.setParameter("param",user.getId());
+            booksTypedQuery.setParameter("param", user.getId());
             books = booksTypedQuery.getResultList();
         }
         entityManager.close();
@@ -142,15 +142,15 @@ public class BooksDaoImpl implements BooksDao {
     public List<Books> findByRangeForSpecificUser(int first, int max, String searchText, Users user) {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Books> booksTypedQuery;
-        List<Books> books=null;
-        if (searchText!=null) {
+        List<Books> books = null;
+        if (searchText != null) {
             booksTypedQuery = entityManager.createNamedQuery("Books.findAllByUserIdSearch", Books.class);
             booksTypedQuery.setParameter("param", searchText.toLowerCase());
             booksTypedQuery.setParameter("user", user.getId());
             booksTypedQuery.setFirstResult(first);
             booksTypedQuery.setMaxResults(max);
             books = booksTypedQuery.getResultList();
-        }else{
+        } else {
             booksTypedQuery = entityManager.createNamedQuery("Books.findAllByUserId", Books.class);
             booksTypedQuery.setParameter("param", user.getId());
             booksTypedQuery.setFirstResult(first);

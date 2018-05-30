@@ -26,13 +26,13 @@ public class RegisterBean {
                 password == null ||
                 password.equals("")) {
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(
-                    FacesMessage.SEVERITY_ERROR, "There are empty spaces", "There are empty spaces"));
+                    FacesMessage.SEVERITY_INFO, "There are empty spaces", "There are empty spaces"));
         } else {
             if (usersDao.checkUserName(username.toLowerCase()) == 0) {
                 try {
                     passwordHash = Util.hashMD5(password);
                 } catch (Exception e) {
-                    FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Unexpected error occurred!", "Unexpected error occurred!"));
+                    FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Unexpected error occurred!", "Unexpected error occurred!"));
                     username="";
                     return "";
                 }
@@ -42,7 +42,7 @@ public class RegisterBean {
 
             } else {
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(
-                        FacesMessage.SEVERITY_ERROR, "Already there is a user like " + username.toLowerCase(), "Already there is a user like " + username));
+                        FacesMessage.SEVERITY_INFO, "Already there is a user like " + username.toLowerCase(), "Already there is a user like " + username));
             }
         }
         username = "";

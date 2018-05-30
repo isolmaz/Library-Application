@@ -30,7 +30,7 @@ public class AuthorsBean {
                 this.authors.getAuthors_desc() == null||
                 this.authors.getAuthors_desc().equals("") ) {
             FacesContext.getCurrentInstance().addMessage(null,new FacesMessage(
-                    FacesMessage.SEVERITY_ERROR, "There are empty spaces","There are empty spaces"
+                    FacesMessage.SEVERITY_INFO, "There are empty spaces","There are empty spaces"
             ));
         }else{
             if (authorsDao.addAuthor(this.authors)){
@@ -38,7 +38,7 @@ public class AuthorsBean {
                 this.authors.setAuthors_desc("");
                 FacesContext.getCurrentInstance().addMessage(null,new FacesMessage(FacesMessage.SEVERITY_INFO,"Successful","Successful"));
             }else{
-                FacesContext.getCurrentInstance().addMessage(null,new FacesMessage(FacesMessage.SEVERITY_ERROR,"Unexpected error occurred!","Unexpected error occurred!"));
+                FacesContext.getCurrentInstance().addMessage(null,new FacesMessage(FacesMessage.SEVERITY_INFO,"Unexpected error occurred!","Unexpected error occurred!"));
             }
         }
     }

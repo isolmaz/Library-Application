@@ -5,14 +5,10 @@ import com.mhmtnasif.library_app.daoImpl.UserDaoImpl;
 import com.mhmtnasif.library_app.entities.Users;
 import com.mhmtnasif.library_app.util.Util;
 
-import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.swing.plaf.synth.SynthTextAreaUI;
 
 @ManagedBean
 @SessionScoped
@@ -31,7 +27,7 @@ public class LoginBean {
                 password == null ||
                 password.equals("")){
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(
-                    FacesMessage.SEVERITY_ERROR, "There are empty spaces", "There are empty spaces"));
+                    FacesMessage.SEVERITY_INFO, "There are empty spaces", "There are empty spaces"));
         }else{
             try{
                passwordHash= Util.hashMD5(password);
@@ -42,7 +38,7 @@ public class LoginBean {
             }
             if (usersDao.login(username,passwordHash)==0){
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(
-                        FacesMessage.SEVERITY_ERROR, "wrong username password combination", "wrong username password combination"));
+                        FacesMessage.SEVERITY_INFO, "wrong username password combination", "wrong username password combination"));
             }else{
                 Users users=usersDao.findUserByUserName(username);
                 FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("valid_user",users);

@@ -20,6 +20,14 @@ public class Publishers {
     @OneToMany(orphanRemoval = true,cascade ={CascadeType.ALL},mappedBy = "book_publisher")
     private List<Books> bookList=new LinkedList<Books>();
 
+    public Publishers(String publisher_name, String publisher_desc) {
+        this.publisher_name = publisher_name;
+        this.publisher_desc = publisher_desc;
+    }
+
+    public Publishers() {
+    }
+
     public long getId() {
         return id;
     }

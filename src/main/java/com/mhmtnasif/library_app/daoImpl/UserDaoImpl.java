@@ -5,6 +5,7 @@ import com.mhmtnasif.library_app.entities.Users;
 import com.mhmtnasif.library_app.util.JpaFactory;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 
 public class UserDaoImpl implements UsersDao {
@@ -45,7 +46,12 @@ public class UserDaoImpl implements UsersDao {
         EntityManager entityManager = JpaFactory.getInstance().getEntityManager();
         TypedQuery<Users> longTypedQuery = entityManager.createNamedQuery("Users.findUserByUserName", Users.class);
         longTypedQuery.setParameter("username", username);
-        Users user = longTypedQuery.getSingleResult();
+        Users user =null;
+        try {
+            user=longTypedQuery.getSingleResult();
+        }catch (NoResultException e){
+            throw new NoResult("There aren't any result like "+username);
+        }
         entityManager.close();
         JpaFactory.getInstance().CloseFactory();
         return user;

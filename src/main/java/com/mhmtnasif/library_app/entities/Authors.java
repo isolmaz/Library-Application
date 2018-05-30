@@ -22,6 +22,14 @@ public class Authors {
     @OneToMany(mappedBy = "book_author" ,cascade ={CascadeType.ALL},orphanRemoval = true)
     private List<Books> bookList=new LinkedList<Books>();
 
+    public Authors(String authors_name, String authors_desc) {
+        this.authors_name = authors_name;
+        this.authors_desc = authors_desc;
+    }
+
+    public Authors() {
+    }
+
     public long getId() {
         return id;
     }

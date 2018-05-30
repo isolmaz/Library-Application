@@ -38,6 +38,20 @@ public class Books {
     @Column(length = 2000)
     private String book_desc;
 
+    public Books(String book_name, String book_sub_name, String book_serial_name, Authors book_author, Publishers book_publisher, Users book_user, String book_isbn, String book_desc) {
+        this.book_name = book_name;
+        this.book_sub_name = book_sub_name;
+        this.book_serial_name = book_serial_name;
+        this.book_author = book_author;
+        this.book_publisher = book_publisher;
+        this.book_user = book_user;
+        this.book_isbn = book_isbn;
+        this.book_desc = book_desc;
+    }
+
+    public Books() {
+    }
+
     public Users getBook_user() {
         return book_user;
     }

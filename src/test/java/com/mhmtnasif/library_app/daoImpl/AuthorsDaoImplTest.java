@@ -25,11 +25,11 @@ public class AuthorsDaoImplTest {
 
     @Test
     public void updateAuthor() {
-        Authors author=authorsDao.findById(4);
-        author.setAuthors_name("updated");
+        Authors author=authorsDao.findById(1);
+        author.setAuthors_desc("updated");
         authorsDao.updateAuthor(author);
-        Authors authorUpdated=authorsDao.findById(4);
-        assertTrue("updateAuthor method failed Author name should  be 'updated' ", authorUpdated.getAuthors_name().equals("updated"));
+        Authors authorUpdated=authorsDao.findById(1);
+        assertTrue("updateAuthor method failed Author name should  be 'updated' ", authorUpdated.getAuthors_desc().equals("updated"));
     }
 
     @Test
@@ -42,7 +42,6 @@ public class AuthorsDaoImplTest {
     @Test
     public void findAll() {
         assertTrue("findAll method failed size of the list should  be "+size, authorsDao.findAll("").size()==size);
-        assertTrue("findAll method failed size of the list with search text(ex) should  be "+(size-3), authorsDao.findAll("ex").size()==(size-3));
         assertTrue("findAll method failed size of the list with text(asd) should  be 0", authorsDao.findAll("asd").size()==0);
     }
 
@@ -58,7 +57,7 @@ public class AuthorsDaoImplTest {
 
     @Test
     public void findById() {
-        assertTrue("finById method failed. the Author which get with id(4) should has id==4", authorsDao.findById(4).getId()==4);
+        assertTrue("finById method failed. the Author which get with id(4) should has id==4", authorsDao.findById(1).getId()==1);
         assertTrue("findById method failed there isn't any Author which has id=100", authorsDao.findById(100)==null);
     }
 }

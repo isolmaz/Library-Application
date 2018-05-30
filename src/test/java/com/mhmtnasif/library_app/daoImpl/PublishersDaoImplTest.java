@@ -2,6 +2,7 @@ package com.mhmtnasif.library_app.daoImpl;
 
 import com.mhmtnasif.library_app.dao.PublishersDao;
 import com.mhmtnasif.library_app.entities.Publishers;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -43,9 +44,9 @@ public class PublishersDaoImplTest {
 
     @Test
     public void findAll() {
-        assertTrue("findAll method failed size of the list should  be "+size, publishersDao.findAll("").size()==size);
-        assertTrue("findAll method failed size of the list with search text(ex) should  be "+(size-3), publishersDao.findAll("ex").size()==(size-3));
-        assertTrue("findAll method failed size of the list with text(asd) should  be 0", publishersDao.findAll("asd").size()==0);
+        assertEquals("findAll method failed size of the list should  be "+size, publishersDao.findAll("").size(),size);
+        assertEquals("findAll method failed size of the list with search text(ex) should  be "+(size-3), publishersDao.findAll("ex").size(),(size-3));
+        assertEquals("findAll method failed size of the list with text(asd) should  be 0", publishersDao.findAll("asd").size(),0);
     }
 
     @Test
@@ -55,13 +56,13 @@ public class PublishersDaoImplTest {
         assertTrue("findByRange(first:0,max:2) method failed size of the list should  be <=2", publishersDao.findByRange(0,2,"").size()<=2);
         assertTrue("findByRange(first:0,max:10,text:ex) method failed size of the list should  be <=10", publishersDao.findByRange(0,10,"ex").size()<=10);
         assertTrue("findByRange(first:10,max:10,text:ex) method failed size of the list should  be <=20", publishersDao.findByRange(10,10,"ex").size()<=20);
-        assertTrue("findByRange(first:0,max:10,text:asd) method failed size of the list should  be 0", publishersDao.findByRange(0,10,"asd").size()==0);
+        assertEquals("findByRange(first:0,max:10,text:asd) method failed size of the list should  be 0", publishersDao.findByRange(0,10,"asd").size(),0);
     }
 
     @Test
     public void findById() {
         assertTrue("finById method failed. the publisher which get with id(4) should has id==4", publishersDao.findById(4).getId()==4);
-        assertTrue("findById method failed there isn't any publisher which has id=100", publishersDao.findById(100)==null);
+        Assert.assertNull("findById method failed there isn't any publisher which has id=100", publishersDao.findById(100));
 
     }
 
