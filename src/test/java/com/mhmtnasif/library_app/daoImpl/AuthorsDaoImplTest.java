@@ -57,7 +57,7 @@ public class AuthorsDaoImplTest {
 
     @Test
     public void findById() {
-        assertTrue("finById method failed. the Author which get with id(4) should has id==4", authorsDao.findById(1).getId()==1);
+        assertTrue("finById method failed. the Author which get with id(1) should has id==1", authorsDao.findById(1).getId()==1);
         assertTrue("findById method failed there isn't any Author which has id=100", authorsDao.findById(100)==null);
     }
 }

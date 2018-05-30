@@ -24,15 +24,18 @@ public class LoginFilter implements Filter {
 
         if (user == null) {
             if (!url.contains("login") && !url.contains("register")) {
-                response.sendRedirect(request.getContextPath() + "login.xhtml?faces-redirect=true");
+                response.sendRedirect(request.getContextPath() + "/login.xhtml?faces-redirect=true");
+                //todo response.sendRedirect(request.getContextPath() + "login.xhtml?faces-redirect=true");
             }
         } else {
             if (user.isAdmin()) {
                 if (url.contains("my-content") || url.contains("login") || url.contains("register") || url.contains("user") || url.contains("add-content")) {
-                    response.sendRedirect(request.getContextPath() + "index.xhtml?faces-redirect=true");
+                    response.sendRedirect(request.getContextPath() + "/index.xhtml?faces-redirect=true");
+                    //todo response.sendRedirect(request.getContextPath() + "index.xhtml?faces-redirect=true");
                 } else if (url.contains("logout")) {
                     request.getSession().invalidate();
-                    response.sendRedirect(request.getContextPath() + "login.xhtml?faces-redirect=true");
+                    response.sendRedirect(request.getContextPath() + "/login.xhtml?faces-redirect=true");
+                    //todo response.sendRedirect(request.getContextPath() + "login.xhtml?faces-redirect=true");
                     return;
                 }
             } else {
@@ -45,10 +48,12 @@ public class LoginFilter implements Filter {
                         url.contains("publishers") ||
                         url.contains("publishers-edit") ||
                         url.contains("register")) {
-                    response.sendRedirect(request.getContextPath() + "user.xhtml?faces-redirect=true");
+                    response.sendRedirect(request.getContextPath() + "/user.xhtml?faces-redirect=true");
+                    //todo response.sendRedirect(request.getContextPath() + "user.xhtml?faces-redirect=true");
                 } else if (url.contains("logout")) {
                     request.getSession().invalidate();
-                    response.sendRedirect(request.getContextPath() + "login.xhtml?faces-redirect=true");
+                    response.sendRedirect(request.getContextPath() + "/login.xhtml?faces-redirect=true");
+                    // todo response.sendRedirect(request.getContextPath() + "login.xhtml?faces-redirect=true");
                     return;
                 }
             }

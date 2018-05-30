@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" time="4.488" errors="0" skipped="0">
+<testsuite tests="13" failures="0" name="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" time="4.307" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -30,7 +30,7 @@
     <property name="net.sourceforge.cobertura.datafile" value="C:\Users\mhmtnasif\Library-Application\target\cobertura\cobertura.ser"/>
     <property name="classworlds.conf" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1254"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\mhmtnasif\AppData\Local\Microsoft\WindowsApps;C:\Users\mhmtnasif\AppData\Local\atom\bin;C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\mhmtnasif\AppData\Local\Microsoft\WindowsApps;C:\Users\mhmtnasif\AppData\Local\atom\bin;C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin;;."/>
     <property name="maven.conf" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -67,17 +67,17 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="remove" time="3.244"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="next" time="0.09"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="init" time="0.127"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="first" time="0.066"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="prev" time="0.073"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="last" time="0.09"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="updateAuthorNullValue" time="0.113"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="isListEmpty" time="0.212"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="edit" time="0.067"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="cancelEdit" time="0.048"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="updateAuthor" time="0.166"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="searchResultList" time="0.087"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="searchResultListISEmpty" time="0.105"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="remove" time="2.888"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="next" time="0.073"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="init" time="0.099"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="first" time="0.07"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="prev" time="0.066"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="last" time="0.094"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="searchResultList" time="0.123"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="searchResultListISEmpty" time="0.158"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="updateAuthorNullValue" time="0.135"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="updateAuthor" time="0.226"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="isListEmpty" time="0.25"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="cancelEdit" time="0.054"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.AuthorEditBeanTest" name="edit" time="0.071"/>
 </testsuite>

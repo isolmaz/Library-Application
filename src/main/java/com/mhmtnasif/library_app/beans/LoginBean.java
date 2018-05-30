@@ -43,9 +43,11 @@ public class LoginBean {
                 Users users=usersDao.findUserByUserName(username);
                 FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("valid_user",users);
                 if (users.isAdmin()){
-                    return "index.xhtml?faces-redirect=true";
+                    return "/index.xhtml?faces-redirect=true";
+                    //todo return "index.xhtml?faces-redirect=true";
                 }else{
-                    return "user.xhtml?faces-redirect=true";
+                    return "/user.xhtml?faces-redirect=true";
+                    //todo return "user.xhtml?faces-redirect=true";
                 }
             }
         }

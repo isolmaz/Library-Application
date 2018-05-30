@@ -38,7 +38,8 @@ public class RegisterBean {
                 }
                 Users user = usersDao.addUser(new Users(username.toLowerCase(), passwordHash, false));
                 FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("valid_user", user);
-                return "user.xhtml?faces-redirect=true";
+                return "/user.xhtml?faces-redirect=true";
+                //todo return "user.xhtml?faces-redirect=true";
 
             } else {
                 FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(

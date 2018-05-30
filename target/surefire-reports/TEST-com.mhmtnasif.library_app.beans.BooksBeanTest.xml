@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.mhmtnasif.library_app.beans.BooksBeanTest" time="2.454" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="com.mhmtnasif.library_app.beans.BooksBeanTest" time="2.102" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -30,7 +30,7 @@
     <property name="net.sourceforge.cobertura.datafile" value="C:\Users\mhmtnasif\Library-Application\target\cobertura\cobertura.ser"/>
     <property name="classworlds.conf" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1254"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\mhmtnasif\AppData\Local\Microsoft\WindowsApps;C:\Users\mhmtnasif\AppData\Local\atom\bin;C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\mhmtnasif\AppData\Local\Microsoft\WindowsApps;C:\Users\mhmtnasif\AppData\Local\atom\bin;C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin;;."/>
     <property name="maven.conf" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -67,6 +67,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mhmtnasif.library_app.beans.BooksBeanTest" name="addBookNullValue" time="2.277"/>
-  <testcase classname="com.mhmtnasif.library_app.beans.BooksBeanTest" name="addBook" time="0.177"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.BooksBeanTest" name="addBook" time="2.079"/>
+  <testcase classname="com.mhmtnasif.library_app.beans.BooksBeanTest" name="addBookNullValue" time="0.023"/>
 </testsuite>

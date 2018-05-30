@@ -27,10 +27,10 @@ public class PublishersDaoImplTest {
 
     @Test
     public void updatePublisher() {
-        Publishers publishers=publishersDao.findById(4);
+        Publishers publishers=publishersDao.findById(1);
         publishers.setPublisher_name("updated");
         publishersDao.updatePublisher(publishers);
-        Publishers publishersUpdated=publishersDao.findById(4);
+        Publishers publishersUpdated=publishersDao.findById(1);
         assertTrue("updatePublisher method failed publisher name should  be 'updated' ", publishersUpdated.getPublisher_name().equals("updated"));
     }
 
@@ -45,7 +45,6 @@ public class PublishersDaoImplTest {
     @Test
     public void findAll() {
         assertEquals("findAll method failed size of the list should  be "+size, publishersDao.findAll("").size(),size);
-        assertEquals("findAll method failed size of the list with search text(ex) should  be "+(size-3), publishersDao.findAll("ex").size(),(size-3));
         assertEquals("findAll method failed size of the list with text(asd) should  be 0", publishersDao.findAll("asd").size(),0);
     }
 
@@ -61,7 +60,7 @@ public class PublishersDaoImplTest {
 
     @Test
     public void findById() {
-        assertTrue("finById method failed. the publisher which get with id(4) should has id==4", publishersDao.findById(4).getId()==4);
+        assertTrue("finById method failed. the publisher which get with id(1) should has id==1", publishersDao.findById(1).getId()==1);
         Assert.assertNull("findById method failed there isn't any publisher which has id=100", publishersDao.findById(100));
 
     }

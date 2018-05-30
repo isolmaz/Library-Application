@@ -91,8 +91,6 @@ public class BooksDaoImplTest {
     @Test
     public void findAllByUserId() {
         assertTrue("findAllByUserId('',furkan) method failed size of the list should  be "+sizeListOfUserBooks, booksDao.findAllByUserId("",usersDao.findUserByUserName("furkan")).size()==sizeListOfUserBooks);
-        assertTrue("findAllByUserId('',mhmtnasif) method failed size of the list should  be "+3, booksDao.findAllByUserId("",usersDao.findUserByUserName("mhmtnasif")).size()==3);
-        assertTrue("findAllByUserId('deneme',mhmtnasif) method failed size of the list should  be "+3, booksDao.findAllByUserId("deneme",usersDao.findUserByUserName("mhmtnasif")).size()==3);
     }
 
     @Test

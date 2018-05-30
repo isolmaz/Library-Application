@@ -71,6 +71,8 @@ public class BooksEditBeanTest {
         ArgumentCaptor<FacesMessage> facesMessageCaptor = ArgumentCaptor.forClass(FacesMessage.class);
         booksEditBean.setBooksPopModel(booksEditBean.getBooksList().get(1));
         booksEditBean.getBooksPopModel().setBook_desc("updated");
+        booksEditBean.setAuthor_id(1);
+        booksEditBean.setPublisher_id(1);
         booksEditBean.updateBook();
         verify(facesContext).addMessage(clientIdCaptor.capture(), facesMessageCaptor.capture());
         assertNull(clientIdCaptor.getValue());

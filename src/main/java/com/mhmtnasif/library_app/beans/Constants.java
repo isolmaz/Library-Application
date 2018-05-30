@@ -6,9 +6,10 @@ import javax.faces.bean.SessionScoped;
 @ManagedBean
 @SessionScoped
 public class Constants {
-    public static String client_id="78p2vlqza8rk0p";
-    public static String redirect_url="http://localhost:8080/user.xhtml";
-    public static String client_secret="lhDJ5i4xcKeZV0RF";
+    public static String client_id="786aq8cym4h88a";
+    public static String redirect_url="http://localhost:8080/Library-Application_war/user.xhtml";
+    //todo public static String redirect_url="http://localhost:8080/user.xhtml";
+    public static String client_secret="MYuwNmlVlKG1NC9o";
 
     public String getClient_id() {
         return client_id;

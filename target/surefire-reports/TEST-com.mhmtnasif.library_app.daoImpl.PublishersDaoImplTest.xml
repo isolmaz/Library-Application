@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="1" name="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" time="0.494" errors="2" skipped="0">
+<testsuite tests="6" failures="1" name="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" time="0.449" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -30,7 +30,7 @@
     <property name="net.sourceforge.cobertura.datafile" value="C:\Users\mhmtnasif\Library-Application\target\cobertura\cobertura.ser"/>
     <property name="classworlds.conf" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1254"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\mhmtnasif\AppData\Local\Microsoft\WindowsApps;C:\Users\mhmtnasif\AppData\Local\atom\bin;C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\mhmtnasif\AppData\Local\Microsoft\WindowsApps;C:\Users\mhmtnasif\AppData\Local\atom\bin;C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin;;."/>
     <property name="maven.conf" value="C:\Users\mhmtnasif\Documents\apache-maven-3.5.2\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -67,94 +67,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="deletePublisher" time="0.08"/>
-  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="updatePublisher" time="0.041">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest.updatePublisher(PublishersDaoImplTest.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-out>[EL Fine]: sql: 2018-05-30 05:00:29.089--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (LOWER(PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(PUBLİSHER_DESC) LIKE CONCAT(CONCAT(?, ?), ?))
-	bind =&gt; [%, , %, %, , %]
-[EL Fine]: sql: 2018-05-30 05:00:29.11--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (İD = ?)
-	bind =&gt; [4]
-</system-out>
-  </testcase>
-  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="findAll" time="0.061">
-    <failure message="findAll method failed size of the list with search text(ex) should  be 29 expected:&lt;26&gt; but was:&lt;29&gt;" type="java.lang.AssertionError">java.lang.AssertionError: findAll method failed size of the list with search text(ex) should  be 29 expected:&lt;26&gt; but was:&lt;29&gt;
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="deletePublisher" time="0.065"/>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="updatePublisher" time="0.066"/>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="findAll" time="0.053"/>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="findById" time="0.054">
+    <failure message="findById method failed there isn&apos;t any publisher which has id=100 expected null, but was:&lt;com.mhmtnasif.library_app.entities.Publishers@47ba506f&gt;" type="java.lang.AssertionError">java.lang.AssertionError: findById method failed there isn&apos;t any publisher which has id=100 expected null, but was:&lt;com.mhmtnasif.library_app.entities.Publishers@47ba506f&gt;
 	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest.findAll(PublishersDaoImplTest.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-    <system-out>[EL Fine]: sql: 2018-05-30 05:00:29.131--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (LOWER(PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(PUBLİSHER_DESC) LIKE CONCAT(CONCAT(?, ?), ?))
-	bind =&gt; [%, , %, %, , %]
-[EL Fine]: sql: 2018-05-30 05:00:29.15--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (LOWER(PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(PUBLİSHER_DESC) LIKE CONCAT(CONCAT(?, ?), ?))
-	bind =&gt; [%, , %, %, , %]
-[EL Fine]: sql: 2018-05-30 05:00:29.169--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (LOWER(PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(PUBLİSHER_DESC) LIKE CONCAT(CONCAT(?, ?), ?))
-	bind =&gt; [%, ex, %, %, ex, %]
-</system-out>
-  </testcase>
-  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="findById" time="0.049">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
 	at com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest.findById(PublishersDaoImplTest.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -186,13 +106,11 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-out>[EL Fine]: sql: 2018-05-30 05:00:29.193--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (LOWER(PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(PUBLİSHER_DESC) LIKE CONCAT(CONCAT(?, ?), ?))
+</failure>
+    <system-out>[EL Fine]: sql: 2018-05-31 01:30:32.224--ServerSession(165456854)--Connection(874281235)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (LOWER(PUBLİSHER_NAME) LIKE CONCAT(CONCAT(?, ?), ?) OR LOWER(PUBLİSHER_DESC) LIKE CONCAT(CONCAT(?, ?), ?))
 	bind =&gt; [%, , %, %, , %]
-[EL Fine]: sql: 2018-05-30 05:00:29.219--ServerSession(1797717514)--Connection(1297323958)--Thread(Thread[main,5,main])--SELECT İD, PUBLİSHER_DESC, PUBLİSHER_NAME FROM PUBLİSHERS WHERE (İD = ?)
-	bind =&gt; [4]
 </system-out>
   </testcase>
-  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="findByRange" time="0.174"/>
-  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="addPublisher" time="0.089"/>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="findByRange" time="0.124"/>
+  <testcase classname="com.mhmtnasif.library_app.daoImpl.PublishersDaoImplTest" name="addPublisher" time="0.087"/>
 </testsuite>
